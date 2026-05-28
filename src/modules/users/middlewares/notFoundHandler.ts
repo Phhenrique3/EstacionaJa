@@ -1,5 +1,5 @@
 import { NextFunction, Response, Request} from "express";
-import {AppError} from "./appError";
+import {AppError} from "./AppError";
 
 
 export class notFoundHandler { 

@@ -6,6 +6,14 @@ export interface RegisterDto{
     email: string,
     password: string,
    role?: UserRole;
-
 }
 
+export interface LoginDto{
+    email: string,
+    password: string
+}
+
+export interface AuthResponseDTO{
+  token: string
+
+}
