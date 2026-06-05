@@ -3,7 +3,7 @@ import { sign, SignOptions } from "jsonwebtoken";
 import { UserRole } from "@prisma/client";
 
 import { AuthResponseDTO, LoginDto, RegisterDto } from "../dtos/auth/authDtos";
-import { UserModel } from "../../models/userModel";
+import { UserModel } from "../models/userModel";
 import AppError from "../middlewares/AppError";
 import { AuthResponse } from "@supabase/supabase-js";
 

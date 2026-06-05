@@ -14,21 +14,21 @@ export function validateLoginMiddleware(
   const { email, password } = req.body;
 
   if (!email || !password) {
-    throw new AppError("E-mail e password são obrigatórios", 400);
+    throw new AppError("Email e senha são obrigatórios", 400);
   }
 
   if (typeof email !== "string") {
-    throw new AppError("email deve ser um texto", 400);
+    throw new AppError("Email deve ser um texto", 400);
   }
 
   const emailTrimmed = email.trim().toLowerCase();
 
   if (!isValidEmail(emailTrimmed)) {
-    throw new AppError("email inválido", 400);
+    throw new AppError("Email inválido", 400);
   }
 
   if (typeof password !== "string") {
-    throw new AppError("password deve ser um texto", 400);
+    throw new AppError("Senha deve ser um texto", 400);
   }
 
   req.body = {
