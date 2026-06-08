@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express"; 
 import { clientService } from "../service/clientService";
-import AppClient from "../middlewares/AppClient";
+import AppClient from "../../../middlewares/AppError";
 
 
 

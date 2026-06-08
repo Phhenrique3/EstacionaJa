@@ -1,4 +1,4 @@
-import  AppError  from "./AppError";
+import  AppError  from "../middlewares/AppError";
 
 
 class badRequestError extends AppError {

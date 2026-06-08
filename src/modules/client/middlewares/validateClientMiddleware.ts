@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import { AppClient } from "../middlewares/AppClient";
+import  AppError  from "../../../middlewares/AppError";
 
 function isValidEmail(email: string): boolean {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -27,54 +27,54 @@ export function validateRegisterClientMiddleware(
   const { name, email, documento, tipo_documento, telefone  } = req.body;
 
   if (!name || !email || !documento || !tipo_documento || !telefone) {
-    throw new AppClient("Nome, email, documento, tipo de documento é telefone  são obrigatórios", 400);
+    throw new AppError("Nome, email, documento, tipo de documento é telefone  são obrigatórios", 400);
   }
 
   if (typeof name !== "string") {
-    throw new AppClient("Nome deve ser um texto", 400);
+    throw new AppError("Nome deve ser um texto", 400);
   }
 
   const nameTrimmed = name.trim();
 
   if (nameTrimmed.length < 3) {
-    throw new AppClient("Nome precisa ter no mínimo 3 caracteres", 400);
+    throw new AppError("Nome precisa ter no mínimo 3 caracteres", 400);
   }
 
   if (!isValidName(nameTrimmed)) {
-    throw new AppClient("Nome deve conter apenas letras e espaços", 400);
+    throw new AppError("Nome deve conter apenas letras e espaços", 400);
   }
 
   if (typeof email !== "string") {
-    throw new AppClient("Email deve ser um texto", 400);
+    throw new AppError("Email deve ser um texto", 400);
   }
 
   const emailTrimmed = email.trim().toLowerCase();
 
   if (!isValidEmail(emailTrimmed)) {
-    throw new AppClient("Email inválido", 400);
+    throw new AppError("Email inválido", 400);
   }
 
   if (typeof telefone !== "string"){
-    throw new AppClient("telefone deve ser uma string",400)
+    throw new AppError("telefone deve ser uma string",400)
   }
 
   const telefoneNormalized = normalizeOnlyNumbers(telefone)
 
   if(telefoneNormalized.length <10 || telefoneNormalized.length >11){
-    throw new AppClient("Telefone deve ter 10 ou 11 dígitos", 400);
+    throw new AppError("Telefone deve ter 10 ou 11 dígitos", 400);
   }
    if (typeof tipo_documento !== "string") {
-    throw new AppClient("Tipo de documento deve ser um texto", 400);
+    throw new AppError("Tipo de documento deve ser um texto", 400);
   }
 
   const tipoDocumentoNormalized = tipo_documento.trim().toUpperCase();
 
   if (!isValidTipoDocumento(tipoDocumentoNormalized)) {
-    throw new AppClient("Tipo de documento deve ser CPF ou CNPJ", 400);
+    throw new AppError("Tipo de documento deve ser CPF ou CNPJ", 400);
   }
 
   if (typeof documento !== "string") {
-    throw new AppClient("Documento deve ser um texto", 400);
+    throw new AppError("Documento deve ser um texto", 400);
   }
 
   const documentoNormalized = normalizeOnlyNumbers(documento);
@@ -83,14 +83,14 @@ export function validateRegisterClientMiddleware(
     tipoDocumentoNormalized === "CPF" &&
     documentoNormalized.length !== 11
   ) {
-    throw new AppClient("CPF deve ter 11 dígitos", 400);
+    throw new AppError("CPF deve ter 11 dígitos", 400);
   }
 
   if (
     tipoDocumentoNormalized === "CNPJ" &&
     documentoNormalized.length !== 14
   ) {
-    throw new AppClient("CNPJ deve ter 14 dígitos", 400);
+    throw new AppError("CNPJ deve ter 14 dígitos", 400);
   }
   req.body = {
    name: nameTrimmed,

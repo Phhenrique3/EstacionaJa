@@ -1,7 +1,7 @@
 import { create } from "node:domain";
 import { CreateClientDTO } from "../dtos/createClientDto";
 import { ClientModel } from "../models/clientModel";
-import AppClinete from "../middlewares/AppClient";
+import AppClinete from "../../../middlewares/AppError";
 
 export const clientService ={
     async create(dto: CreateClientDTO){

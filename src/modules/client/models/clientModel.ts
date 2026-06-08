@@ -1,3 +1,4 @@
+import { SrvRecord } from "node:dns"
 import { prisma } from "../../../config/prisma"
 import { CreateClientDTO } from "../dtos/createClientDto"
 
@@ -14,6 +15,15 @@ export const ClientModel = {
         return prisma.client.findUnique({
             where: {
                 documento,
+            }
+        })
+
+    },
+
+    async findById(id: string){
+        return prisma.client.findUnique({
+            where:{
+                id,
             }
         })
     },

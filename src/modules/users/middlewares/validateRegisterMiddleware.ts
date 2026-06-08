@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import AppError from "../middlewares/AppError";
+import AppError from "../../../middlewares/AppError";
 
 function isValidEmail(email: string): boolean {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

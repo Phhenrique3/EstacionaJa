@@ -10,6 +10,7 @@ enum UserRole {
   ADMIN
   OPERATOR
 }
+
 enum TipoDocumento {
   CPF
   CNPJ
@@ -24,6 +25,7 @@ model User {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
 model Client {
   id             String        @id @default(uuid())
   name           String
@@ -33,4 +35,31 @@ model Client {
   documento      String        @unique
   createdAt      DateTime      @default(now())
   updatedAt      DateTime      @updatedAt
+  vehicles       Vehicle[]
+}
+
+model VehicleCategory {
+  id          String    @id @default(uuid())
+  name        String    @unique
+  description String?
+  active      Boolean   @default(true)
+  vehicles    Vehicle[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Vehicle {
+  id     String  @id @default(uuid())
+  placa  String  @unique
+  marca  String?
+  modelo String?
+  cor    String?
+
+  clientId   String
+  client     Client          @relation(fields: [clientId], references: [id])
+  categoryId String
+  category   VehicleCategory @relation(fields: [categoryId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }

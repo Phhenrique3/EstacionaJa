@@ -4,7 +4,7 @@ import { UserRole } from "@prisma/client";
 
 import { AuthResponseDTO, LoginDto, RegisterDto } from "../dtos/auth/authDtos";
 import { UserModel } from "../models/userModel";
-import AppError from "../middlewares/AppError";
+import AppError from "../../../middlewares/AppError";
 import { AuthResponse } from "@supabase/supabase-js";
 
 const JWT_SECRET = process.env.JWT_SECRET || "dev-secret";

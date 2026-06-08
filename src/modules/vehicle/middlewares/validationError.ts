@@ -1,4 +1,4 @@
-import {AppError} from "./AppError";
+import AppError from "../../../middlewares/AppError";
 
 class  validationError extends AppError { 
     constructor(mensagem = "Erros de dados enviados"){
