@@ -16,6 +16,12 @@ enum TipoDocumento {
   CNPJ
 }
 
+enum TipoCobranca {
+  HORA
+  DIARIA
+  MENSAL
+}
+
 model User {
   id        String   @id @default(uuid())
   name      String
@@ -39,15 +45,30 @@ model Client {
 }
 
 model VehicleCategory {
-  id          String    @id @default(uuid())
-  name        String    @unique
-  description String?
-  active      Boolean   @default(true)
-  vehicles    Vehicle[]
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
+  id           String        @id @default(uuid())
+  name         String        @unique
+  description  String?
+  active       Boolean       @default(true)
+  vehicles     Vehicle[]
+  pricingRules PricingRule[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
+model PricingRule {
+  id                 String          @id @default(uuid())
+  categoryId         String
+  category           VehicleCategory @relation(fields: [categoryId], references: [id])
+
+  tipo_cobranca      TipoCobranca
+  valor              Decimal
+  tolerancia_minutos Int             @default(0)
+  active             Boolean         @default(true)
+
+  createdAt          DateTime        @default(now())
+  updatedAt          DateTime        @updatedAt
+}
 model Vehicle {
   id     String  @id @default(uuid())
   placa  String  @unique

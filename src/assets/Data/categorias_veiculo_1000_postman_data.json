@@ -1,0 +1,4002 @@
+[
+  {
+    "name": "Carro 0001",
+    "description": "Veículos de passeio - categoria de teste 0001"
+  },
+  {
+    "name": "Moto 0002",
+    "description": "Motocicletas e scooters - categoria de teste 0002"
+  },
+  {
+    "name": "Caminhonete 0003",
+    "description": "Veículos utilitários leves - categoria de teste 0003"
+  },
+  {
+    "name": "Van 0004",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0004"
+  },
+  {
+    "name": "Caminhão 0005",
+    "description": "Veículos de carga - categoria de teste 0005"
+  },
+  {
+    "name": "Ônibus 0006",
+    "description": "Veículos para transporte coletivo - categoria de teste 0006"
+  },
+  {
+    "name": "SUV 0007",
+    "description": "Veículos esportivos utilitários - categoria de teste 0007"
+  },
+  {
+    "name": "Picape 0008",
+    "description": "Veículos com caçamba - categoria de teste 0008"
+  },
+  {
+    "name": "Elétrico 0009",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0009"
+  },
+  {
+    "name": "Híbrido 0010",
+    "description": "Veículos com motor híbrido - categoria de teste 0010"
+  },
+  {
+    "name": "Carro 0011",
+    "description": "Veículos de passeio - categoria de teste 0011"
+  },
+  {
+    "name": "Moto 0012",
+    "description": "Motocicletas e scooters - categoria de teste 0012"
+  },
+  {
+    "name": "Caminhonete 0013",
+    "description": "Veículos utilitários leves - categoria de teste 0013"
+  },
+  {
+    "name": "Van 0014",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0014"
+  },
+  {
+    "name": "Caminhão 0015",
+    "description": "Veículos de carga - categoria de teste 0015"
+  },
+  {
+    "name": "Ônibus 0016",
+    "description": "Veículos para transporte coletivo - categoria de teste 0016"
+  },
+  {
+    "name": "SUV 0017",
+    "description": "Veículos esportivos utilitários - categoria de teste 0017"
+  },
+  {
+    "name": "Picape 0018",
+    "description": "Veículos com caçamba - categoria de teste 0018"
+  },
+  {
+    "name": "Elétrico 0019",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0019"
+  },
+  {
+    "name": "Híbrido 0020",
+    "description": "Veículos com motor híbrido - categoria de teste 0020"
+  },
+  {
+    "name": "Carro 0021",
+    "description": "Veículos de passeio - categoria de teste 0021"
+  },
+  {
+    "name": "Moto 0022",
+    "description": "Motocicletas e scooters - categoria de teste 0022"
+  },
+  {
+    "name": "Caminhonete 0023",
+    "description": "Veículos utilitários leves - categoria de teste 0023"
+  },
+  {
+    "name": "Van 0024",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0024"
+  },
+  {
+    "name": "Caminhão 0025",
+    "description": "Veículos de carga - categoria de teste 0025"
+  },
+  {
+    "name": "Ônibus 0026",
+    "description": "Veículos para transporte coletivo - categoria de teste 0026"
+  },
+  {
+    "name": "SUV 0027",
+    "description": "Veículos esportivos utilitários - categoria de teste 0027"
+  },
+  {
+    "name": "Picape 0028",
+    "description": "Veículos com caçamba - categoria de teste 0028"
+  },
+  {
+    "name": "Elétrico 0029",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0029"
+  },
+  {
+    "name": "Híbrido 0030",
+    "description": "Veículos com motor híbrido - categoria de teste 0030"
+  },
+  {
+    "name": "Carro 0031",
+    "description": "Veículos de passeio - categoria de teste 0031"
+  },
+  {
+    "name": "Moto 0032",
+    "description": "Motocicletas e scooters - categoria de teste 0032"
+  },
+  {
+    "name": "Caminhonete 0033",
+    "description": "Veículos utilitários leves - categoria de teste 0033"
+  },
+  {
+    "name": "Van 0034",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0034"
+  },
+  {
+    "name": "Caminhão 0035",
+    "description": "Veículos de carga - categoria de teste 0035"
+  },
+  {
+    "name": "Ônibus 0036",
+    "description": "Veículos para transporte coletivo - categoria de teste 0036"
+  },
+  {
+    "name": "SUV 0037",
+    "description": "Veículos esportivos utilitários - categoria de teste 0037"
+  },
+  {
+    "name": "Picape 0038",
+    "description": "Veículos com caçamba - categoria de teste 0038"
+  },
+  {
+    "name": "Elétrico 0039",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0039"
+  },
+  {
+    "name": "Híbrido 0040",
+    "description": "Veículos com motor híbrido - categoria de teste 0040"
+  },
+  {
+    "name": "Carro 0041",
+    "description": "Veículos de passeio - categoria de teste 0041"
+  },
+  {
+    "name": "Moto 0042",
+    "description": "Motocicletas e scooters - categoria de teste 0042"
+  },
+  {
+    "name": "Caminhonete 0043",
+    "description": "Veículos utilitários leves - categoria de teste 0043"
+  },
+  {
+    "name": "Van 0044",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0044"
+  },
+  {
+    "name": "Caminhão 0045",
+    "description": "Veículos de carga - categoria de teste 0045"
+  },
+  {
+    "name": "Ônibus 0046",
+    "description": "Veículos para transporte coletivo - categoria de teste 0046"
+  },
+  {
+    "name": "SUV 0047",
+    "description": "Veículos esportivos utilitários - categoria de teste 0047"
+  },
+  {
+    "name": "Picape 0048",
+    "description": "Veículos com caçamba - categoria de teste 0048"
+  },
+  {
+    "name": "Elétrico 0049",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0049"
+  },
+  {
+    "name": "Híbrido 0050",
+    "description": "Veículos com motor híbrido - categoria de teste 0050"
+  },
+  {
+    "name": "Carro 0051",
+    "description": "Veículos de passeio - categoria de teste 0051"
+  },
+  {
+    "name": "Moto 0052",
+    "description": "Motocicletas e scooters - categoria de teste 0052"
+  },
+  {
+    "name": "Caminhonete 0053",
+    "description": "Veículos utilitários leves - categoria de teste 0053"
+  },
+  {
+    "name": "Van 0054",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0054"
+  },
+  {
+    "name": "Caminhão 0055",
+    "description": "Veículos de carga - categoria de teste 0055"
+  },
+  {
+    "name": "Ônibus 0056",
+    "description": "Veículos para transporte coletivo - categoria de teste 0056"
+  },
+  {
+    "name": "SUV 0057",
+    "description": "Veículos esportivos utilitários - categoria de teste 0057"
+  },
+  {
+    "name": "Picape 0058",
+    "description": "Veículos com caçamba - categoria de teste 0058"
+  },
+  {
+    "name": "Elétrico 0059",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0059"
+  },
+  {
+    "name": "Híbrido 0060",
+    "description": "Veículos com motor híbrido - categoria de teste 0060"
+  },
+  {
+    "name": "Carro 0061",
+    "description": "Veículos de passeio - categoria de teste 0061"
+  },
+  {
+    "name": "Moto 0062",
+    "description": "Motocicletas e scooters - categoria de teste 0062"
+  },
+  {
+    "name": "Caminhonete 0063",
+    "description": "Veículos utilitários leves - categoria de teste 0063"
+  },
+  {
+    "name": "Van 0064",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0064"
+  },
+  {
+    "name": "Caminhão 0065",
+    "description": "Veículos de carga - categoria de teste 0065"
+  },
+  {
+    "name": "Ônibus 0066",
+    "description": "Veículos para transporte coletivo - categoria de teste 0066"
+  },
+  {
+    "name": "SUV 0067",
+    "description": "Veículos esportivos utilitários - categoria de teste 0067"
+  },
+  {
+    "name": "Picape 0068",
+    "description": "Veículos com caçamba - categoria de teste 0068"
+  },
+  {
+    "name": "Elétrico 0069",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0069"
+  },
+  {
+    "name": "Híbrido 0070",
+    "description": "Veículos com motor híbrido - categoria de teste 0070"
+  },
+  {
+    "name": "Carro 0071",
+    "description": "Veículos de passeio - categoria de teste 0071"
+  },
+  {
+    "name": "Moto 0072",
+    "description": "Motocicletas e scooters - categoria de teste 0072"
+  },
+  {
+    "name": "Caminhonete 0073",
+    "description": "Veículos utilitários leves - categoria de teste 0073"
+  },
+  {
+    "name": "Van 0074",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0074"
+  },
+  {
+    "name": "Caminhão 0075",
+    "description": "Veículos de carga - categoria de teste 0075"
+  },
+  {
+    "name": "Ônibus 0076",
+    "description": "Veículos para transporte coletivo - categoria de teste 0076"
+  },
+  {
+    "name": "SUV 0077",
+    "description": "Veículos esportivos utilitários - categoria de teste 0077"
+  },
+  {
+    "name": "Picape 0078",
+    "description": "Veículos com caçamba - categoria de teste 0078"
+  },
+  {
+    "name": "Elétrico 0079",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0079"
+  },
+  {
+    "name": "Híbrido 0080",
+    "description": "Veículos com motor híbrido - categoria de teste 0080"
+  },
+  {
+    "name": "Carro 0081",
+    "description": "Veículos de passeio - categoria de teste 0081"
+  },
+  {
+    "name": "Moto 0082",
+    "description": "Motocicletas e scooters - categoria de teste 0082"
+  },
+  {
+    "name": "Caminhonete 0083",
+    "description": "Veículos utilitários leves - categoria de teste 0083"
+  },
+  {
+    "name": "Van 0084",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0084"
+  },
+  {
+    "name": "Caminhão 0085",
+    "description": "Veículos de carga - categoria de teste 0085"
+  },
+  {
+    "name": "Ônibus 0086",
+    "description": "Veículos para transporte coletivo - categoria de teste 0086"
+  },
+  {
+    "name": "SUV 0087",
+    "description": "Veículos esportivos utilitários - categoria de teste 0087"
+  },
+  {
+    "name": "Picape 0088",
+    "description": "Veículos com caçamba - categoria de teste 0088"
+  },
+  {
+    "name": "Elétrico 0089",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0089"
+  },
+  {
+    "name": "Híbrido 0090",
+    "description": "Veículos com motor híbrido - categoria de teste 0090"
+  },
+  {
+    "name": "Carro 0091",
+    "description": "Veículos de passeio - categoria de teste 0091"
+  },
+  {
+    "name": "Moto 0092",
+    "description": "Motocicletas e scooters - categoria de teste 0092"
+  },
+  {
+    "name": "Caminhonete 0093",
+    "description": "Veículos utilitários leves - categoria de teste 0093"
+  },
+  {
+    "name": "Van 0094",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0094"
+  },
+  {
+    "name": "Caminhão 0095",
+    "description": "Veículos de carga - categoria de teste 0095"
+  },
+  {
+    "name": "Ônibus 0096",
+    "description": "Veículos para transporte coletivo - categoria de teste 0096"
+  },
+  {
+    "name": "SUV 0097",
+    "description": "Veículos esportivos utilitários - categoria de teste 0097"
+  },
+  {
+    "name": "Picape 0098",
+    "description": "Veículos com caçamba - categoria de teste 0098"
+  },
+  {
+    "name": "Elétrico 0099",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0099"
+  },
+  {
+    "name": "Híbrido 0100",
+    "description": "Veículos com motor híbrido - categoria de teste 0100"
+  },
+  {
+    "name": "Carro 0101",
+    "description": "Veículos de passeio - categoria de teste 0101"
+  },
+  {
+    "name": "Moto 0102",
+    "description": "Motocicletas e scooters - categoria de teste 0102"
+  },
+  {
+    "name": "Caminhonete 0103",
+    "description": "Veículos utilitários leves - categoria de teste 0103"
+  },
+  {
+    "name": "Van 0104",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0104"
+  },
+  {
+    "name": "Caminhão 0105",
+    "description": "Veículos de carga - categoria de teste 0105"
+  },
+  {
+    "name": "Ônibus 0106",
+    "description": "Veículos para transporte coletivo - categoria de teste 0106"
+  },
+  {
+    "name": "SUV 0107",
+    "description": "Veículos esportivos utilitários - categoria de teste 0107"
+  },
+  {
+    "name": "Picape 0108",
+    "description": "Veículos com caçamba - categoria de teste 0108"
+  },
+  {
+    "name": "Elétrico 0109",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0109"
+  },
+  {
+    "name": "Híbrido 0110",
+    "description": "Veículos com motor híbrido - categoria de teste 0110"
+  },
+  {
+    "name": "Carro 0111",
+    "description": "Veículos de passeio - categoria de teste 0111"
+  },
+  {
+    "name": "Moto 0112",
+    "description": "Motocicletas e scooters - categoria de teste 0112"
+  },
+  {
+    "name": "Caminhonete 0113",
+    "description": "Veículos utilitários leves - categoria de teste 0113"
+  },
+  {
+    "name": "Van 0114",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0114"
+  },
+  {
+    "name": "Caminhão 0115",
+    "description": "Veículos de carga - categoria de teste 0115"
+  },
+  {
+    "name": "Ônibus 0116",
+    "description": "Veículos para transporte coletivo - categoria de teste 0116"
+  },
+  {
+    "name": "SUV 0117",
+    "description": "Veículos esportivos utilitários - categoria de teste 0117"
+  },
+  {
+    "name": "Picape 0118",
+    "description": "Veículos com caçamba - categoria de teste 0118"
+  },
+  {
+    "name": "Elétrico 0119",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0119"
+  },
+  {
+    "name": "Híbrido 0120",
+    "description": "Veículos com motor híbrido - categoria de teste 0120"
+  },
+  {
+    "name": "Carro 0121",
+    "description": "Veículos de passeio - categoria de teste 0121"
+  },
+  {
+    "name": "Moto 0122",
+    "description": "Motocicletas e scooters - categoria de teste 0122"
+  },
+  {
+    "name": "Caminhonete 0123",
+    "description": "Veículos utilitários leves - categoria de teste 0123"
+  },
+  {
+    "name": "Van 0124",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0124"
+  },
+  {
+    "name": "Caminhão 0125",
+    "description": "Veículos de carga - categoria de teste 0125"
+  },
+  {
+    "name": "Ônibus 0126",
+    "description": "Veículos para transporte coletivo - categoria de teste 0126"
+  },
+  {
+    "name": "SUV 0127",
+    "description": "Veículos esportivos utilitários - categoria de teste 0127"
+  },
+  {
+    "name": "Picape 0128",
+    "description": "Veículos com caçamba - categoria de teste 0128"
+  },
+  {
+    "name": "Elétrico 0129",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0129"
+  },
+  {
+    "name": "Híbrido 0130",
+    "description": "Veículos com motor híbrido - categoria de teste 0130"
+  },
+  {
+    "name": "Carro 0131",
+    "description": "Veículos de passeio - categoria de teste 0131"
+  },
+  {
+    "name": "Moto 0132",
+    "description": "Motocicletas e scooters - categoria de teste 0132"
+  },
+  {
+    "name": "Caminhonete 0133",
+    "description": "Veículos utilitários leves - categoria de teste 0133"
+  },
+  {
+    "name": "Van 0134",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0134"
+  },
+  {
+    "name": "Caminhão 0135",
+    "description": "Veículos de carga - categoria de teste 0135"
+  },
+  {
+    "name": "Ônibus 0136",
+    "description": "Veículos para transporte coletivo - categoria de teste 0136"
+  },
+  {
+    "name": "SUV 0137",
+    "description": "Veículos esportivos utilitários - categoria de teste 0137"
+  },
+  {
+    "name": "Picape 0138",
+    "description": "Veículos com caçamba - categoria de teste 0138"
+  },
+  {
+    "name": "Elétrico 0139",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0139"
+  },
+  {
+    "name": "Híbrido 0140",
+    "description": "Veículos com motor híbrido - categoria de teste 0140"
+  },
+  {
+    "name": "Carro 0141",
+    "description": "Veículos de passeio - categoria de teste 0141"
+  },
+  {
+    "name": "Moto 0142",
+    "description": "Motocicletas e scooters - categoria de teste 0142"
+  },
+  {
+    "name": "Caminhonete 0143",
+    "description": "Veículos utilitários leves - categoria de teste 0143"
+  },
+  {
+    "name": "Van 0144",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0144"
+  },
+  {
+    "name": "Caminhão 0145",
+    "description": "Veículos de carga - categoria de teste 0145"
+  },
+  {
+    "name": "Ônibus 0146",
+    "description": "Veículos para transporte coletivo - categoria de teste 0146"
+  },
+  {
+    "name": "SUV 0147",
+    "description": "Veículos esportivos utilitários - categoria de teste 0147"
+  },
+  {
+    "name": "Picape 0148",
+    "description": "Veículos com caçamba - categoria de teste 0148"
+  },
+  {
+    "name": "Elétrico 0149",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0149"
+  },
+  {
+    "name": "Híbrido 0150",
+    "description": "Veículos com motor híbrido - categoria de teste 0150"
+  },
+  {
+    "name": "Carro 0151",
+    "description": "Veículos de passeio - categoria de teste 0151"
+  },
+  {
+    "name": "Moto 0152",
+    "description": "Motocicletas e scooters - categoria de teste 0152"
+  },
+  {
+    "name": "Caminhonete 0153",
+    "description": "Veículos utilitários leves - categoria de teste 0153"
+  },
+  {
+    "name": "Van 0154",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0154"
+  },
+  {
+    "name": "Caminhão 0155",
+    "description": "Veículos de carga - categoria de teste 0155"
+  },
+  {
+    "name": "Ônibus 0156",
+    "description": "Veículos para transporte coletivo - categoria de teste 0156"
+  },
+  {
+    "name": "SUV 0157",
+    "description": "Veículos esportivos utilitários - categoria de teste 0157"
+  },
+  {
+    "name": "Picape 0158",
+    "description": "Veículos com caçamba - categoria de teste 0158"
+  },
+  {
+    "name": "Elétrico 0159",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0159"
+  },
+  {
+    "name": "Híbrido 0160",
+    "description": "Veículos com motor híbrido - categoria de teste 0160"
+  },
+  {
+    "name": "Carro 0161",
+    "description": "Veículos de passeio - categoria de teste 0161"
+  },
+  {
+    "name": "Moto 0162",
+    "description": "Motocicletas e scooters - categoria de teste 0162"
+  },
+  {
+    "name": "Caminhonete 0163",
+    "description": "Veículos utilitários leves - categoria de teste 0163"
+  },
+  {
+    "name": "Van 0164",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0164"
+  },
+  {
+    "name": "Caminhão 0165",
+    "description": "Veículos de carga - categoria de teste 0165"
+  },
+  {
+    "name": "Ônibus 0166",
+    "description": "Veículos para transporte coletivo - categoria de teste 0166"
+  },
+  {
+    "name": "SUV 0167",
+    "description": "Veículos esportivos utilitários - categoria de teste 0167"
+  },
+  {
+    "name": "Picape 0168",
+    "description": "Veículos com caçamba - categoria de teste 0168"
+  },
+  {
+    "name": "Elétrico 0169",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0169"
+  },
+  {
+    "name": "Híbrido 0170",
+    "description": "Veículos com motor híbrido - categoria de teste 0170"
+  },
+  {
+    "name": "Carro 0171",
+    "description": "Veículos de passeio - categoria de teste 0171"
+  },
+  {
+    "name": "Moto 0172",
+    "description": "Motocicletas e scooters - categoria de teste 0172"
+  },
+  {
+    "name": "Caminhonete 0173",
+    "description": "Veículos utilitários leves - categoria de teste 0173"
+  },
+  {
+    "name": "Van 0174",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0174"
+  },
+  {
+    "name": "Caminhão 0175",
+    "description": "Veículos de carga - categoria de teste 0175"
+  },
+  {
+    "name": "Ônibus 0176",
+    "description": "Veículos para transporte coletivo - categoria de teste 0176"
+  },
+  {
+    "name": "SUV 0177",
+    "description": "Veículos esportivos utilitários - categoria de teste 0177"
+  },
+  {
+    "name": "Picape 0178",
+    "description": "Veículos com caçamba - categoria de teste 0178"
+  },
+  {
+    "name": "Elétrico 0179",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0179"
+  },
+  {
+    "name": "Híbrido 0180",
+    "description": "Veículos com motor híbrido - categoria de teste 0180"
+  },
+  {
+    "name": "Carro 0181",
+    "description": "Veículos de passeio - categoria de teste 0181"
+  },
+  {
+    "name": "Moto 0182",
+    "description": "Motocicletas e scooters - categoria de teste 0182"
+  },
+  {
+    "name": "Caminhonete 0183",
+    "description": "Veículos utilitários leves - categoria de teste 0183"
+  },
+  {
+    "name": "Van 0184",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0184"
+  },
+  {
+    "name": "Caminhão 0185",
+    "description": "Veículos de carga - categoria de teste 0185"
+  },
+  {
+    "name": "Ônibus 0186",
+    "description": "Veículos para transporte coletivo - categoria de teste 0186"
+  },
+  {
+    "name": "SUV 0187",
+    "description": "Veículos esportivos utilitários - categoria de teste 0187"
+  },
+  {
+    "name": "Picape 0188",
+    "description": "Veículos com caçamba - categoria de teste 0188"
+  },
+  {
+    "name": "Elétrico 0189",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0189"
+  },
+  {
+    "name": "Híbrido 0190",
+    "description": "Veículos com motor híbrido - categoria de teste 0190"
+  },
+  {
+    "name": "Carro 0191",
+    "description": "Veículos de passeio - categoria de teste 0191"
+  },
+  {
+    "name": "Moto 0192",
+    "description": "Motocicletas e scooters - categoria de teste 0192"
+  },
+  {
+    "name": "Caminhonete 0193",
+    "description": "Veículos utilitários leves - categoria de teste 0193"
+  },
+  {
+    "name": "Van 0194",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0194"
+  },
+  {
+    "name": "Caminhão 0195",
+    "description": "Veículos de carga - categoria de teste 0195"
+  },
+  {
+    "name": "Ônibus 0196",
+    "description": "Veículos para transporte coletivo - categoria de teste 0196"
+  },
+  {
+    "name": "SUV 0197",
+    "description": "Veículos esportivos utilitários - categoria de teste 0197"
+  },
+  {
+    "name": "Picape 0198",
+    "description": "Veículos com caçamba - categoria de teste 0198"
+  },
+  {
+    "name": "Elétrico 0199",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0199"
+  },
+  {
+    "name": "Híbrido 0200",
+    "description": "Veículos com motor híbrido - categoria de teste 0200"
+  },
+  {
+    "name": "Carro 0201",
+    "description": "Veículos de passeio - categoria de teste 0201"
+  },
+  {
+    "name": "Moto 0202",
+    "description": "Motocicletas e scooters - categoria de teste 0202"
+  },
+  {
+    "name": "Caminhonete 0203",
+    "description": "Veículos utilitários leves - categoria de teste 0203"
+  },
+  {
+    "name": "Van 0204",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0204"
+  },
+  {
+    "name": "Caminhão 0205",
+    "description": "Veículos de carga - categoria de teste 0205"
+  },
+  {
+    "name": "Ônibus 0206",
+    "description": "Veículos para transporte coletivo - categoria de teste 0206"
+  },
+  {
+    "name": "SUV 0207",
+    "description": "Veículos esportivos utilitários - categoria de teste 0207"
+  },
+  {
+    "name": "Picape 0208",
+    "description": "Veículos com caçamba - categoria de teste 0208"
+  },
+  {
+    "name": "Elétrico 0209",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0209"
+  },
+  {
+    "name": "Híbrido 0210",
+    "description": "Veículos com motor híbrido - categoria de teste 0210"
+  },
+  {
+    "name": "Carro 0211",
+    "description": "Veículos de passeio - categoria de teste 0211"
+  },
+  {
+    "name": "Moto 0212",
+    "description": "Motocicletas e scooters - categoria de teste 0212"
+  },
+  {
+    "name": "Caminhonete 0213",
+    "description": "Veículos utilitários leves - categoria de teste 0213"
+  },
+  {
+    "name": "Van 0214",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0214"
+  },
+  {
+    "name": "Caminhão 0215",
+    "description": "Veículos de carga - categoria de teste 0215"
+  },
+  {
+    "name": "Ônibus 0216",
+    "description": "Veículos para transporte coletivo - categoria de teste 0216"
+  },
+  {
+    "name": "SUV 0217",
+    "description": "Veículos esportivos utilitários - categoria de teste 0217"
+  },
+  {
+    "name": "Picape 0218",
+    "description": "Veículos com caçamba - categoria de teste 0218"
+  },
+  {
+    "name": "Elétrico 0219",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0219"
+  },
+  {
+    "name": "Híbrido 0220",
+    "description": "Veículos com motor híbrido - categoria de teste 0220"
+  },
+  {
+    "name": "Carro 0221",
+    "description": "Veículos de passeio - categoria de teste 0221"
+  },
+  {
+    "name": "Moto 0222",
+    "description": "Motocicletas e scooters - categoria de teste 0222"
+  },
+  {
+    "name": "Caminhonete 0223",
+    "description": "Veículos utilitários leves - categoria de teste 0223"
+  },
+  {
+    "name": "Van 0224",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0224"
+  },
+  {
+    "name": "Caminhão 0225",
+    "description": "Veículos de carga - categoria de teste 0225"
+  },
+  {
+    "name": "Ônibus 0226",
+    "description": "Veículos para transporte coletivo - categoria de teste 0226"
+  },
+  {
+    "name": "SUV 0227",
+    "description": "Veículos esportivos utilitários - categoria de teste 0227"
+  },
+  {
+    "name": "Picape 0228",
+    "description": "Veículos com caçamba - categoria de teste 0228"
+  },
+  {
+    "name": "Elétrico 0229",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0229"
+  },
+  {
+    "name": "Híbrido 0230",
+    "description": "Veículos com motor híbrido - categoria de teste 0230"
+  },
+  {
+    "name": "Carro 0231",
+    "description": "Veículos de passeio - categoria de teste 0231"
+  },
+  {
+    "name": "Moto 0232",
+    "description": "Motocicletas e scooters - categoria de teste 0232"
+  },
+  {
+    "name": "Caminhonete 0233",
+    "description": "Veículos utilitários leves - categoria de teste 0233"
+  },
+  {
+    "name": "Van 0234",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0234"
+  },
+  {
+    "name": "Caminhão 0235",
+    "description": "Veículos de carga - categoria de teste 0235"
+  },
+  {
+    "name": "Ônibus 0236",
+    "description": "Veículos para transporte coletivo - categoria de teste 0236"
+  },
+  {
+    "name": "SUV 0237",
+    "description": "Veículos esportivos utilitários - categoria de teste 0237"
+  },
+  {
+    "name": "Picape 0238",
+    "description": "Veículos com caçamba - categoria de teste 0238"
+  },
+  {
+    "name": "Elétrico 0239",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0239"
+  },
+  {
+    "name": "Híbrido 0240",
+    "description": "Veículos com motor híbrido - categoria de teste 0240"
+  },
+  {
+    "name": "Carro 0241",
+    "description": "Veículos de passeio - categoria de teste 0241"
+  },
+  {
+    "name": "Moto 0242",
+    "description": "Motocicletas e scooters - categoria de teste 0242"
+  },
+  {
+    "name": "Caminhonete 0243",
+    "description": "Veículos utilitários leves - categoria de teste 0243"
+  },
+  {
+    "name": "Van 0244",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0244"
+  },
+  {
+    "name": "Caminhão 0245",
+    "description": "Veículos de carga - categoria de teste 0245"
+  },
+  {
+    "name": "Ônibus 0246",
+    "description": "Veículos para transporte coletivo - categoria de teste 0246"
+  },
+  {
+    "name": "SUV 0247",
+    "description": "Veículos esportivos utilitários - categoria de teste 0247"
+  },
+  {
+    "name": "Picape 0248",
+    "description": "Veículos com caçamba - categoria de teste 0248"
+  },
+  {
+    "name": "Elétrico 0249",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0249"
+  },
+  {
+    "name": "Híbrido 0250",
+    "description": "Veículos com motor híbrido - categoria de teste 0250"
+  },
+  {
+    "name": "Carro 0251",
+    "description": "Veículos de passeio - categoria de teste 0251"
+  },
+  {
+    "name": "Moto 0252",
+    "description": "Motocicletas e scooters - categoria de teste 0252"
+  },
+  {
+    "name": "Caminhonete 0253",
+    "description": "Veículos utilitários leves - categoria de teste 0253"
+  },
+  {
+    "name": "Van 0254",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0254"
+  },
+  {
+    "name": "Caminhão 0255",
+    "description": "Veículos de carga - categoria de teste 0255"
+  },
+  {
+    "name": "Ônibus 0256",
+    "description": "Veículos para transporte coletivo - categoria de teste 0256"
+  },
+  {
+    "name": "SUV 0257",
+    "description": "Veículos esportivos utilitários - categoria de teste 0257"
+  },
+  {
+    "name": "Picape 0258",
+    "description": "Veículos com caçamba - categoria de teste 0258"
+  },
+  {
+    "name": "Elétrico 0259",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0259"
+  },
+  {
+    "name": "Híbrido 0260",
+    "description": "Veículos com motor híbrido - categoria de teste 0260"
+  },
+  {
+    "name": "Carro 0261",
+    "description": "Veículos de passeio - categoria de teste 0261"
+  },
+  {
+    "name": "Moto 0262",
+    "description": "Motocicletas e scooters - categoria de teste 0262"
+  },
+  {
+    "name": "Caminhonete 0263",
+    "description": "Veículos utilitários leves - categoria de teste 0263"
+  },
+  {
+    "name": "Van 0264",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0264"
+  },
+  {
+    "name": "Caminhão 0265",
+    "description": "Veículos de carga - categoria de teste 0265"
+  },
+  {
+    "name": "Ônibus 0266",
+    "description": "Veículos para transporte coletivo - categoria de teste 0266"
+  },
+  {
+    "name": "SUV 0267",
+    "description": "Veículos esportivos utilitários - categoria de teste 0267"
+  },
+  {
+    "name": "Picape 0268",
+    "description": "Veículos com caçamba - categoria de teste 0268"
+  },
+  {
+    "name": "Elétrico 0269",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0269"
+  },
+  {
+    "name": "Híbrido 0270",
+    "description": "Veículos com motor híbrido - categoria de teste 0270"
+  },
+  {
+    "name": "Carro 0271",
+    "description": "Veículos de passeio - categoria de teste 0271"
+  },
+  {
+    "name": "Moto 0272",
+    "description": "Motocicletas e scooters - categoria de teste 0272"
+  },
+  {
+    "name": "Caminhonete 0273",
+    "description": "Veículos utilitários leves - categoria de teste 0273"
+  },
+  {
+    "name": "Van 0274",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0274"
+  },
+  {
+    "name": "Caminhão 0275",
+    "description": "Veículos de carga - categoria de teste 0275"
+  },
+  {
+    "name": "Ônibus 0276",
+    "description": "Veículos para transporte coletivo - categoria de teste 0276"
+  },
+  {
+    "name": "SUV 0277",
+    "description": "Veículos esportivos utilitários - categoria de teste 0277"
+  },
+  {
+    "name": "Picape 0278",
+    "description": "Veículos com caçamba - categoria de teste 0278"
+  },
+  {
+    "name": "Elétrico 0279",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0279"
+  },
+  {
+    "name": "Híbrido 0280",
+    "description": "Veículos com motor híbrido - categoria de teste 0280"
+  },
+  {
+    "name": "Carro 0281",
+    "description": "Veículos de passeio - categoria de teste 0281"
+  },
+  {
+    "name": "Moto 0282",
+    "description": "Motocicletas e scooters - categoria de teste 0282"
+  },
+  {
+    "name": "Caminhonete 0283",
+    "description": "Veículos utilitários leves - categoria de teste 0283"
+  },
+  {
+    "name": "Van 0284",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0284"
+  },
+  {
+    "name": "Caminhão 0285",
+    "description": "Veículos de carga - categoria de teste 0285"
+  },
+  {
+    "name": "Ônibus 0286",
+    "description": "Veículos para transporte coletivo - categoria de teste 0286"
+  },
+  {
+    "name": "SUV 0287",
+    "description": "Veículos esportivos utilitários - categoria de teste 0287"
+  },
+  {
+    "name": "Picape 0288",
+    "description": "Veículos com caçamba - categoria de teste 0288"
+  },
+  {
+    "name": "Elétrico 0289",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0289"
+  },
+  {
+    "name": "Híbrido 0290",
+    "description": "Veículos com motor híbrido - categoria de teste 0290"
+  },
+  {
+    "name": "Carro 0291",
+    "description": "Veículos de passeio - categoria de teste 0291"
+  },
+  {
+    "name": "Moto 0292",
+    "description": "Motocicletas e scooters - categoria de teste 0292"
+  },
+  {
+    "name": "Caminhonete 0293",
+    "description": "Veículos utilitários leves - categoria de teste 0293"
+  },
+  {
+    "name": "Van 0294",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0294"
+  },
+  {
+    "name": "Caminhão 0295",
+    "description": "Veículos de carga - categoria de teste 0295"
+  },
+  {
+    "name": "Ônibus 0296",
+    "description": "Veículos para transporte coletivo - categoria de teste 0296"
+  },
+  {
+    "name": "SUV 0297",
+    "description": "Veículos esportivos utilitários - categoria de teste 0297"
+  },
+  {
+    "name": "Picape 0298",
+    "description": "Veículos com caçamba - categoria de teste 0298"
+  },
+  {
+    "name": "Elétrico 0299",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0299"
+  },
+  {
+    "name": "Híbrido 0300",
+    "description": "Veículos com motor híbrido - categoria de teste 0300"
+  },
+  {
+    "name": "Carro 0301",
+    "description": "Veículos de passeio - categoria de teste 0301"
+  },
+  {
+    "name": "Moto 0302",
+    "description": "Motocicletas e scooters - categoria de teste 0302"
+  },
+  {
+    "name": "Caminhonete 0303",
+    "description": "Veículos utilitários leves - categoria de teste 0303"
+  },
+  {
+    "name": "Van 0304",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0304"
+  },
+  {
+    "name": "Caminhão 0305",
+    "description": "Veículos de carga - categoria de teste 0305"
+  },
+  {
+    "name": "Ônibus 0306",
+    "description": "Veículos para transporte coletivo - categoria de teste 0306"
+  },
+  {
+    "name": "SUV 0307",
+    "description": "Veículos esportivos utilitários - categoria de teste 0307"
+  },
+  {
+    "name": "Picape 0308",
+    "description": "Veículos com caçamba - categoria de teste 0308"
+  },
+  {
+    "name": "Elétrico 0309",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0309"
+  },
+  {
+    "name": "Híbrido 0310",
+    "description": "Veículos com motor híbrido - categoria de teste 0310"
+  },
+  {
+    "name": "Carro 0311",
+    "description": "Veículos de passeio - categoria de teste 0311"
+  },
+  {
+    "name": "Moto 0312",
+    "description": "Motocicletas e scooters - categoria de teste 0312"
+  },
+  {
+    "name": "Caminhonete 0313",
+    "description": "Veículos utilitários leves - categoria de teste 0313"
+  },
+  {
+    "name": "Van 0314",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0314"
+  },
+  {
+    "name": "Caminhão 0315",
+    "description": "Veículos de carga - categoria de teste 0315"
+  },
+  {
+    "name": "Ônibus 0316",
+    "description": "Veículos para transporte coletivo - categoria de teste 0316"
+  },
+  {
+    "name": "SUV 0317",
+    "description": "Veículos esportivos utilitários - categoria de teste 0317"
+  },
+  {
+    "name": "Picape 0318",
+    "description": "Veículos com caçamba - categoria de teste 0318"
+  },
+  {
+    "name": "Elétrico 0319",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0319"
+  },
+  {
+    "name": "Híbrido 0320",
+    "description": "Veículos com motor híbrido - categoria de teste 0320"
+  },
+  {
+    "name": "Carro 0321",
+    "description": "Veículos de passeio - categoria de teste 0321"
+  },
+  {
+    "name": "Moto 0322",
+    "description": "Motocicletas e scooters - categoria de teste 0322"
+  },
+  {
+    "name": "Caminhonete 0323",
+    "description": "Veículos utilitários leves - categoria de teste 0323"
+  },
+  {
+    "name": "Van 0324",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0324"
+  },
+  {
+    "name": "Caminhão 0325",
+    "description": "Veículos de carga - categoria de teste 0325"
+  },
+  {
+    "name": "Ônibus 0326",
+    "description": "Veículos para transporte coletivo - categoria de teste 0326"
+  },
+  {
+    "name": "SUV 0327",
+    "description": "Veículos esportivos utilitários - categoria de teste 0327"
+  },
+  {
+    "name": "Picape 0328",
+    "description": "Veículos com caçamba - categoria de teste 0328"
+  },
+  {
+    "name": "Elétrico 0329",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0329"
+  },
+  {
+    "name": "Híbrido 0330",
+    "description": "Veículos com motor híbrido - categoria de teste 0330"
+  },
+  {
+    "name": "Carro 0331",
+    "description": "Veículos de passeio - categoria de teste 0331"
+  },
+  {
+    "name": "Moto 0332",
+    "description": "Motocicletas e scooters - categoria de teste 0332"
+  },
+  {
+    "name": "Caminhonete 0333",
+    "description": "Veículos utilitários leves - categoria de teste 0333"
+  },
+  {
+    "name": "Van 0334",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0334"
+  },
+  {
+    "name": "Caminhão 0335",
+    "description": "Veículos de carga - categoria de teste 0335"
+  },
+  {
+    "name": "Ônibus 0336",
+    "description": "Veículos para transporte coletivo - categoria de teste 0336"
+  },
+  {
+    "name": "SUV 0337",
+    "description": "Veículos esportivos utilitários - categoria de teste 0337"
+  },
+  {
+    "name": "Picape 0338",
+    "description": "Veículos com caçamba - categoria de teste 0338"
+  },
+  {
+    "name": "Elétrico 0339",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0339"
+  },
+  {
+    "name": "Híbrido 0340",
+    "description": "Veículos com motor híbrido - categoria de teste 0340"
+  },
+  {
+    "name": "Carro 0341",
+    "description": "Veículos de passeio - categoria de teste 0341"
+  },
+  {
+    "name": "Moto 0342",
+    "description": "Motocicletas e scooters - categoria de teste 0342"
+  },
+  {
+    "name": "Caminhonete 0343",
+    "description": "Veículos utilitários leves - categoria de teste 0343"
+  },
+  {
+    "name": "Van 0344",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0344"
+  },
+  {
+    "name": "Caminhão 0345",
+    "description": "Veículos de carga - categoria de teste 0345"
+  },
+  {
+    "name": "Ônibus 0346",
+    "description": "Veículos para transporte coletivo - categoria de teste 0346"
+  },
+  {
+    "name": "SUV 0347",
+    "description": "Veículos esportivos utilitários - categoria de teste 0347"
+  },
+  {
+    "name": "Picape 0348",
+    "description": "Veículos com caçamba - categoria de teste 0348"
+  },
+  {
+    "name": "Elétrico 0349",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0349"
+  },
+  {
+    "name": "Híbrido 0350",
+    "description": "Veículos com motor híbrido - categoria de teste 0350"
+  },
+  {
+    "name": "Carro 0351",
+    "description": "Veículos de passeio - categoria de teste 0351"
+  },
+  {
+    "name": "Moto 0352",
+    "description": "Motocicletas e scooters - categoria de teste 0352"
+  },
+  {
+    "name": "Caminhonete 0353",
+    "description": "Veículos utilitários leves - categoria de teste 0353"
+  },
+  {
+    "name": "Van 0354",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0354"
+  },
+  {
+    "name": "Caminhão 0355",
+    "description": "Veículos de carga - categoria de teste 0355"
+  },
+  {
+    "name": "Ônibus 0356",
+    "description": "Veículos para transporte coletivo - categoria de teste 0356"
+  },
+  {
+    "name": "SUV 0357",
+    "description": "Veículos esportivos utilitários - categoria de teste 0357"
+  },
+  {
+    "name": "Picape 0358",
+    "description": "Veículos com caçamba - categoria de teste 0358"
+  },
+  {
+    "name": "Elétrico 0359",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0359"
+  },
+  {
+    "name": "Híbrido 0360",
+    "description": "Veículos com motor híbrido - categoria de teste 0360"
+  },
+  {
+    "name": "Carro 0361",
+    "description": "Veículos de passeio - categoria de teste 0361"
+  },
+  {
+    "name": "Moto 0362",
+    "description": "Motocicletas e scooters - categoria de teste 0362"
+  },
+  {
+    "name": "Caminhonete 0363",
+    "description": "Veículos utilitários leves - categoria de teste 0363"
+  },
+  {
+    "name": "Van 0364",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0364"
+  },
+  {
+    "name": "Caminhão 0365",
+    "description": "Veículos de carga - categoria de teste 0365"
+  },
+  {
+    "name": "Ônibus 0366",
+    "description": "Veículos para transporte coletivo - categoria de teste 0366"
+  },
+  {
+    "name": "SUV 0367",
+    "description": "Veículos esportivos utilitários - categoria de teste 0367"
+  },
+  {
+    "name": "Picape 0368",
+    "description": "Veículos com caçamba - categoria de teste 0368"
+  },
+  {
+    "name": "Elétrico 0369",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0369"
+  },
+  {
+    "name": "Híbrido 0370",
+    "description": "Veículos com motor híbrido - categoria de teste 0370"
+  },
+  {
+    "name": "Carro 0371",
+    "description": "Veículos de passeio - categoria de teste 0371"
+  },
+  {
+    "name": "Moto 0372",
+    "description": "Motocicletas e scooters - categoria de teste 0372"
+  },
+  {
+    "name": "Caminhonete 0373",
+    "description": "Veículos utilitários leves - categoria de teste 0373"
+  },
+  {
+    "name": "Van 0374",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0374"
+  },
+  {
+    "name": "Caminhão 0375",
+    "description": "Veículos de carga - categoria de teste 0375"
+  },
+  {
+    "name": "Ônibus 0376",
+    "description": "Veículos para transporte coletivo - categoria de teste 0376"
+  },
+  {
+    "name": "SUV 0377",
+    "description": "Veículos esportivos utilitários - categoria de teste 0377"
+  },
+  {
+    "name": "Picape 0378",
+    "description": "Veículos com caçamba - categoria de teste 0378"
+  },
+  {
+    "name": "Elétrico 0379",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0379"
+  },
+  {
+    "name": "Híbrido 0380",
+    "description": "Veículos com motor híbrido - categoria de teste 0380"
+  },
+  {
+    "name": "Carro 0381",
+    "description": "Veículos de passeio - categoria de teste 0381"
+  },
+  {
+    "name": "Moto 0382",
+    "description": "Motocicletas e scooters - categoria de teste 0382"
+  },
+  {
+    "name": "Caminhonete 0383",
+    "description": "Veículos utilitários leves - categoria de teste 0383"
+  },
+  {
+    "name": "Van 0384",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0384"
+  },
+  {
+    "name": "Caminhão 0385",
+    "description": "Veículos de carga - categoria de teste 0385"
+  },
+  {
+    "name": "Ônibus 0386",
+    "description": "Veículos para transporte coletivo - categoria de teste 0386"
+  },
+  {
+    "name": "SUV 0387",
+    "description": "Veículos esportivos utilitários - categoria de teste 0387"
+  },
+  {
+    "name": "Picape 0388",
+    "description": "Veículos com caçamba - categoria de teste 0388"
+  },
+  {
+    "name": "Elétrico 0389",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0389"
+  },
+  {
+    "name": "Híbrido 0390",
+    "description": "Veículos com motor híbrido - categoria de teste 0390"
+  },
+  {
+    "name": "Carro 0391",
+    "description": "Veículos de passeio - categoria de teste 0391"
+  },
+  {
+    "name": "Moto 0392",
+    "description": "Motocicletas e scooters - categoria de teste 0392"
+  },
+  {
+    "name": "Caminhonete 0393",
+    "description": "Veículos utilitários leves - categoria de teste 0393"
+  },
+  {
+    "name": "Van 0394",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0394"
+  },
+  {
+    "name": "Caminhão 0395",
+    "description": "Veículos de carga - categoria de teste 0395"
+  },
+  {
+    "name": "Ônibus 0396",
+    "description": "Veículos para transporte coletivo - categoria de teste 0396"
+  },
+  {
+    "name": "SUV 0397",
+    "description": "Veículos esportivos utilitários - categoria de teste 0397"
+  },
+  {
+    "name": "Picape 0398",
+    "description": "Veículos com caçamba - categoria de teste 0398"
+  },
+  {
+    "name": "Elétrico 0399",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0399"
+  },
+  {
+    "name": "Híbrido 0400",
+    "description": "Veículos com motor híbrido - categoria de teste 0400"
+  },
+  {
+    "name": "Carro 0401",
+    "description": "Veículos de passeio - categoria de teste 0401"
+  },
+  {
+    "name": "Moto 0402",
+    "description": "Motocicletas e scooters - categoria de teste 0402"
+  },
+  {
+    "name": "Caminhonete 0403",
+    "description": "Veículos utilitários leves - categoria de teste 0403"
+  },
+  {
+    "name": "Van 0404",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0404"
+  },
+  {
+    "name": "Caminhão 0405",
+    "description": "Veículos de carga - categoria de teste 0405"
+  },
+  {
+    "name": "Ônibus 0406",
+    "description": "Veículos para transporte coletivo - categoria de teste 0406"
+  },
+  {
+    "name": "SUV 0407",
+    "description": "Veículos esportivos utilitários - categoria de teste 0407"
+  },
+  {
+    "name": "Picape 0408",
+    "description": "Veículos com caçamba - categoria de teste 0408"
+  },
+  {
+    "name": "Elétrico 0409",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0409"
+  },
+  {
+    "name": "Híbrido 0410",
+    "description": "Veículos com motor híbrido - categoria de teste 0410"
+  },
+  {
+    "name": "Carro 0411",
+    "description": "Veículos de passeio - categoria de teste 0411"
+  },
+  {
+    "name": "Moto 0412",
+    "description": "Motocicletas e scooters - categoria de teste 0412"
+  },
+  {
+    "name": "Caminhonete 0413",
+    "description": "Veículos utilitários leves - categoria de teste 0413"
+  },
+  {
+    "name": "Van 0414",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0414"
+  },
+  {
+    "name": "Caminhão 0415",
+    "description": "Veículos de carga - categoria de teste 0415"
+  },
+  {
+    "name": "Ônibus 0416",
+    "description": "Veículos para transporte coletivo - categoria de teste 0416"
+  },
+  {
+    "name": "SUV 0417",
+    "description": "Veículos esportivos utilitários - categoria de teste 0417"
+  },
+  {
+    "name": "Picape 0418",
+    "description": "Veículos com caçamba - categoria de teste 0418"
+  },
+  {
+    "name": "Elétrico 0419",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0419"
+  },
+  {
+    "name": "Híbrido 0420",
+    "description": "Veículos com motor híbrido - categoria de teste 0420"
+  },
+  {
+    "name": "Carro 0421",
+    "description": "Veículos de passeio - categoria de teste 0421"
+  },
+  {
+    "name": "Moto 0422",
+    "description": "Motocicletas e scooters - categoria de teste 0422"
+  },
+  {
+    "name": "Caminhonete 0423",
+    "description": "Veículos utilitários leves - categoria de teste 0423"
+  },
+  {
+    "name": "Van 0424",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0424"
+  },
+  {
+    "name": "Caminhão 0425",
+    "description": "Veículos de carga - categoria de teste 0425"
+  },
+  {
+    "name": "Ônibus 0426",
+    "description": "Veículos para transporte coletivo - categoria de teste 0426"
+  },
+  {
+    "name": "SUV 0427",
+    "description": "Veículos esportivos utilitários - categoria de teste 0427"
+  },
+  {
+    "name": "Picape 0428",
+    "description": "Veículos com caçamba - categoria de teste 0428"
+  },
+  {
+    "name": "Elétrico 0429",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0429"
+  },
+  {
+    "name": "Híbrido 0430",
+    "description": "Veículos com motor híbrido - categoria de teste 0430"
+  },
+  {
+    "name": "Carro 0431",
+    "description": "Veículos de passeio - categoria de teste 0431"
+  },
+  {
+    "name": "Moto 0432",
+    "description": "Motocicletas e scooters - categoria de teste 0432"
+  },
+  {
+    "name": "Caminhonete 0433",
+    "description": "Veículos utilitários leves - categoria de teste 0433"
+  },
+  {
+    "name": "Van 0434",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0434"
+  },
+  {
+    "name": "Caminhão 0435",
+    "description": "Veículos de carga - categoria de teste 0435"
+  },
+  {
+    "name": "Ônibus 0436",
+    "description": "Veículos para transporte coletivo - categoria de teste 0436"
+  },
+  {
+    "name": "SUV 0437",
+    "description": "Veículos esportivos utilitários - categoria de teste 0437"
+  },
+  {
+    "name": "Picape 0438",
+    "description": "Veículos com caçamba - categoria de teste 0438"
+  },
+  {
+    "name": "Elétrico 0439",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0439"
+  },
+  {
+    "name": "Híbrido 0440",
+    "description": "Veículos com motor híbrido - categoria de teste 0440"
+  },
+  {
+    "name": "Carro 0441",
+    "description": "Veículos de passeio - categoria de teste 0441"
+  },
+  {
+    "name": "Moto 0442",
+    "description": "Motocicletas e scooters - categoria de teste 0442"
+  },
+  {
+    "name": "Caminhonete 0443",
+    "description": "Veículos utilitários leves - categoria de teste 0443"
+  },
+  {
+    "name": "Van 0444",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0444"
+  },
+  {
+    "name": "Caminhão 0445",
+    "description": "Veículos de carga - categoria de teste 0445"
+  },
+  {
+    "name": "Ônibus 0446",
+    "description": "Veículos para transporte coletivo - categoria de teste 0446"
+  },
+  {
+    "name": "SUV 0447",
+    "description": "Veículos esportivos utilitários - categoria de teste 0447"
+  },
+  {
+    "name": "Picape 0448",
+    "description": "Veículos com caçamba - categoria de teste 0448"
+  },
+  {
+    "name": "Elétrico 0449",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0449"
+  },
+  {
+    "name": "Híbrido 0450",
+    "description": "Veículos com motor híbrido - categoria de teste 0450"
+  },
+  {
+    "name": "Carro 0451",
+    "description": "Veículos de passeio - categoria de teste 0451"
+  },
+  {
+    "name": "Moto 0452",
+    "description": "Motocicletas e scooters - categoria de teste 0452"
+  },
+  {
+    "name": "Caminhonete 0453",
+    "description": "Veículos utilitários leves - categoria de teste 0453"
+  },
+  {
+    "name": "Van 0454",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0454"
+  },
+  {
+    "name": "Caminhão 0455",
+    "description": "Veículos de carga - categoria de teste 0455"
+  },
+  {
+    "name": "Ônibus 0456",
+    "description": "Veículos para transporte coletivo - categoria de teste 0456"
+  },
+  {
+    "name": "SUV 0457",
+    "description": "Veículos esportivos utilitários - categoria de teste 0457"
+  },
+  {
+    "name": "Picape 0458",
+    "description": "Veículos com caçamba - categoria de teste 0458"
+  },
+  {
+    "name": "Elétrico 0459",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0459"
+  },
+  {
+    "name": "Híbrido 0460",
+    "description": "Veículos com motor híbrido - categoria de teste 0460"
+  },
+  {
+    "name": "Carro 0461",
+    "description": "Veículos de passeio - categoria de teste 0461"
+  },
+  {
+    "name": "Moto 0462",
+    "description": "Motocicletas e scooters - categoria de teste 0462"
+  },
+  {
+    "name": "Caminhonete 0463",
+    "description": "Veículos utilitários leves - categoria de teste 0463"
+  },
+  {
+    "name": "Van 0464",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0464"
+  },
+  {
+    "name": "Caminhão 0465",
+    "description": "Veículos de carga - categoria de teste 0465"
+  },
+  {
+    "name": "Ônibus 0466",
+    "description": "Veículos para transporte coletivo - categoria de teste 0466"
+  },
+  {
+    "name": "SUV 0467",
+    "description": "Veículos esportivos utilitários - categoria de teste 0467"
+  },
+  {
+    "name": "Picape 0468",
+    "description": "Veículos com caçamba - categoria de teste 0468"
+  },
+  {
+    "name": "Elétrico 0469",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0469"
+  },
+  {
+    "name": "Híbrido 0470",
+    "description": "Veículos com motor híbrido - categoria de teste 0470"
+  },
+  {
+    "name": "Carro 0471",
+    "description": "Veículos de passeio - categoria de teste 0471"
+  },
+  {
+    "name": "Moto 0472",
+    "description": "Motocicletas e scooters - categoria de teste 0472"
+  },
+  {
+    "name": "Caminhonete 0473",
+    "description": "Veículos utilitários leves - categoria de teste 0473"
+  },
+  {
+    "name": "Van 0474",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0474"
+  },
+  {
+    "name": "Caminhão 0475",
+    "description": "Veículos de carga - categoria de teste 0475"
+  },
+  {
+    "name": "Ônibus 0476",
+    "description": "Veículos para transporte coletivo - categoria de teste 0476"
+  },
+  {
+    "name": "SUV 0477",
+    "description": "Veículos esportivos utilitários - categoria de teste 0477"
+  },
+  {
+    "name": "Picape 0478",
+    "description": "Veículos com caçamba - categoria de teste 0478"
+  },
+  {
+    "name": "Elétrico 0479",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0479"
+  },
+  {
+    "name": "Híbrido 0480",
+    "description": "Veículos com motor híbrido - categoria de teste 0480"
+  },
+  {
+    "name": "Carro 0481",
+    "description": "Veículos de passeio - categoria de teste 0481"
+  },
+  {
+    "name": "Moto 0482",
+    "description": "Motocicletas e scooters - categoria de teste 0482"
+  },
+  {
+    "name": "Caminhonete 0483",
+    "description": "Veículos utilitários leves - categoria de teste 0483"
+  },
+  {
+    "name": "Van 0484",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0484"
+  },
+  {
+    "name": "Caminhão 0485",
+    "description": "Veículos de carga - categoria de teste 0485"
+  },
+  {
+    "name": "Ônibus 0486",
+    "description": "Veículos para transporte coletivo - categoria de teste 0486"
+  },
+  {
+    "name": "SUV 0487",
+    "description": "Veículos esportivos utilitários - categoria de teste 0487"
+  },
+  {
+    "name": "Picape 0488",
+    "description": "Veículos com caçamba - categoria de teste 0488"
+  },
+  {
+    "name": "Elétrico 0489",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0489"
+  },
+  {
+    "name": "Híbrido 0490",
+    "description": "Veículos com motor híbrido - categoria de teste 0490"
+  },
+  {
+    "name": "Carro 0491",
+    "description": "Veículos de passeio - categoria de teste 0491"
+  },
+  {
+    "name": "Moto 0492",
+    "description": "Motocicletas e scooters - categoria de teste 0492"
+  },
+  {
+    "name": "Caminhonete 0493",
+    "description": "Veículos utilitários leves - categoria de teste 0493"
+  },
+  {
+    "name": "Van 0494",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0494"
+  },
+  {
+    "name": "Caminhão 0495",
+    "description": "Veículos de carga - categoria de teste 0495"
+  },
+  {
+    "name": "Ônibus 0496",
+    "description": "Veículos para transporte coletivo - categoria de teste 0496"
+  },
+  {
+    "name": "SUV 0497",
+    "description": "Veículos esportivos utilitários - categoria de teste 0497"
+  },
+  {
+    "name": "Picape 0498",
+    "description": "Veículos com caçamba - categoria de teste 0498"
+  },
+  {
+    "name": "Elétrico 0499",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0499"
+  },
+  {
+    "name": "Híbrido 0500",
+    "description": "Veículos com motor híbrido - categoria de teste 0500"
+  },
+  {
+    "name": "Carro 0501",
+    "description": "Veículos de passeio - categoria de teste 0501"
+  },
+  {
+    "name": "Moto 0502",
+    "description": "Motocicletas e scooters - categoria de teste 0502"
+  },
+  {
+    "name": "Caminhonete 0503",
+    "description": "Veículos utilitários leves - categoria de teste 0503"
+  },
+  {
+    "name": "Van 0504",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0504"
+  },
+  {
+    "name": "Caminhão 0505",
+    "description": "Veículos de carga - categoria de teste 0505"
+  },
+  {
+    "name": "Ônibus 0506",
+    "description": "Veículos para transporte coletivo - categoria de teste 0506"
+  },
+  {
+    "name": "SUV 0507",
+    "description": "Veículos esportivos utilitários - categoria de teste 0507"
+  },
+  {
+    "name": "Picape 0508",
+    "description": "Veículos com caçamba - categoria de teste 0508"
+  },
+  {
+    "name": "Elétrico 0509",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0509"
+  },
+  {
+    "name": "Híbrido 0510",
+    "description": "Veículos com motor híbrido - categoria de teste 0510"
+  },
+  {
+    "name": "Carro 0511",
+    "description": "Veículos de passeio - categoria de teste 0511"
+  },
+  {
+    "name": "Moto 0512",
+    "description": "Motocicletas e scooters - categoria de teste 0512"
+  },
+  {
+    "name": "Caminhonete 0513",
+    "description": "Veículos utilitários leves - categoria de teste 0513"
+  },
+  {
+    "name": "Van 0514",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0514"
+  },
+  {
+    "name": "Caminhão 0515",
+    "description": "Veículos de carga - categoria de teste 0515"
+  },
+  {
+    "name": "Ônibus 0516",
+    "description": "Veículos para transporte coletivo - categoria de teste 0516"
+  },
+  {
+    "name": "SUV 0517",
+    "description": "Veículos esportivos utilitários - categoria de teste 0517"
+  },
+  {
+    "name": "Picape 0518",
+    "description": "Veículos com caçamba - categoria de teste 0518"
+  },
+  {
+    "name": "Elétrico 0519",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0519"
+  },
+  {
+    "name": "Híbrido 0520",
+    "description": "Veículos com motor híbrido - categoria de teste 0520"
+  },
+  {
+    "name": "Carro 0521",
+    "description": "Veículos de passeio - categoria de teste 0521"
+  },
+  {
+    "name": "Moto 0522",
+    "description": "Motocicletas e scooters - categoria de teste 0522"
+  },
+  {
+    "name": "Caminhonete 0523",
+    "description": "Veículos utilitários leves - categoria de teste 0523"
+  },
+  {
+    "name": "Van 0524",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0524"
+  },
+  {
+    "name": "Caminhão 0525",
+    "description": "Veículos de carga - categoria de teste 0525"
+  },
+  {
+    "name": "Ônibus 0526",
+    "description": "Veículos para transporte coletivo - categoria de teste 0526"
+  },
+  {
+    "name": "SUV 0527",
+    "description": "Veículos esportivos utilitários - categoria de teste 0527"
+  },
+  {
+    "name": "Picape 0528",
+    "description": "Veículos com caçamba - categoria de teste 0528"
+  },
+  {
+    "name": "Elétrico 0529",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0529"
+  },
+  {
+    "name": "Híbrido 0530",
+    "description": "Veículos com motor híbrido - categoria de teste 0530"
+  },
+  {
+    "name": "Carro 0531",
+    "description": "Veículos de passeio - categoria de teste 0531"
+  },
+  {
+    "name": "Moto 0532",
+    "description": "Motocicletas e scooters - categoria de teste 0532"
+  },
+  {
+    "name": "Caminhonete 0533",
+    "description": "Veículos utilitários leves - categoria de teste 0533"
+  },
+  {
+    "name": "Van 0534",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0534"
+  },
+  {
+    "name": "Caminhão 0535",
+    "description": "Veículos de carga - categoria de teste 0535"
+  },
+  {
+    "name": "Ônibus 0536",
+    "description": "Veículos para transporte coletivo - categoria de teste 0536"
+  },
+  {
+    "name": "SUV 0537",
+    "description": "Veículos esportivos utilitários - categoria de teste 0537"
+  },
+  {
+    "name": "Picape 0538",
+    "description": "Veículos com caçamba - categoria de teste 0538"
+  },
+  {
+    "name": "Elétrico 0539",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0539"
+  },
+  {
+    "name": "Híbrido 0540",
+    "description": "Veículos com motor híbrido - categoria de teste 0540"
+  },
+  {
+    "name": "Carro 0541",
+    "description": "Veículos de passeio - categoria de teste 0541"
+  },
+  {
+    "name": "Moto 0542",
+    "description": "Motocicletas e scooters - categoria de teste 0542"
+  },
+  {
+    "name": "Caminhonete 0543",
+    "description": "Veículos utilitários leves - categoria de teste 0543"
+  },
+  {
+    "name": "Van 0544",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0544"
+  },
+  {
+    "name": "Caminhão 0545",
+    "description": "Veículos de carga - categoria de teste 0545"
+  },
+  {
+    "name": "Ônibus 0546",
+    "description": "Veículos para transporte coletivo - categoria de teste 0546"
+  },
+  {
+    "name": "SUV 0547",
+    "description": "Veículos esportivos utilitários - categoria de teste 0547"
+  },
+  {
+    "name": "Picape 0548",
+    "description": "Veículos com caçamba - categoria de teste 0548"
+  },
+  {
+    "name": "Elétrico 0549",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0549"
+  },
+  {
+    "name": "Híbrido 0550",
+    "description": "Veículos com motor híbrido - categoria de teste 0550"
+  },
+  {
+    "name": "Carro 0551",
+    "description": "Veículos de passeio - categoria de teste 0551"
+  },
+  {
+    "name": "Moto 0552",
+    "description": "Motocicletas e scooters - categoria de teste 0552"
+  },
+  {
+    "name": "Caminhonete 0553",
+    "description": "Veículos utilitários leves - categoria de teste 0553"
+  },
+  {
+    "name": "Van 0554",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0554"
+  },
+  {
+    "name": "Caminhão 0555",
+    "description": "Veículos de carga - categoria de teste 0555"
+  },
+  {
+    "name": "Ônibus 0556",
+    "description": "Veículos para transporte coletivo - categoria de teste 0556"
+  },
+  {
+    "name": "SUV 0557",
+    "description": "Veículos esportivos utilitários - categoria de teste 0557"
+  },
+  {
+    "name": "Picape 0558",
+    "description": "Veículos com caçamba - categoria de teste 0558"
+  },
+  {
+    "name": "Elétrico 0559",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0559"
+  },
+  {
+    "name": "Híbrido 0560",
+    "description": "Veículos com motor híbrido - categoria de teste 0560"
+  },
+  {
+    "name": "Carro 0561",
+    "description": "Veículos de passeio - categoria de teste 0561"
+  },
+  {
+    "name": "Moto 0562",
+    "description": "Motocicletas e scooters - categoria de teste 0562"
+  },
+  {
+    "name": "Caminhonete 0563",
+    "description": "Veículos utilitários leves - categoria de teste 0563"
+  },
+  {
+    "name": "Van 0564",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0564"
+  },
+  {
+    "name": "Caminhão 0565",
+    "description": "Veículos de carga - categoria de teste 0565"
+  },
+  {
+    "name": "Ônibus 0566",
+    "description": "Veículos para transporte coletivo - categoria de teste 0566"
+  },
+  {
+    "name": "SUV 0567",
+    "description": "Veículos esportivos utilitários - categoria de teste 0567"
+  },
+  {
+    "name": "Picape 0568",
+    "description": "Veículos com caçamba - categoria de teste 0568"
+  },
+  {
+    "name": "Elétrico 0569",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0569"
+  },
+  {
+    "name": "Híbrido 0570",
+    "description": "Veículos com motor híbrido - categoria de teste 0570"
+  },
+  {
+    "name": "Carro 0571",
+    "description": "Veículos de passeio - categoria de teste 0571"
+  },
+  {
+    "name": "Moto 0572",
+    "description": "Motocicletas e scooters - categoria de teste 0572"
+  },
+  {
+    "name": "Caminhonete 0573",
+    "description": "Veículos utilitários leves - categoria de teste 0573"
+  },
+  {
+    "name": "Van 0574",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0574"
+  },
+  {
+    "name": "Caminhão 0575",
+    "description": "Veículos de carga - categoria de teste 0575"
+  },
+  {
+    "name": "Ônibus 0576",
+    "description": "Veículos para transporte coletivo - categoria de teste 0576"
+  },
+  {
+    "name": "SUV 0577",
+    "description": "Veículos esportivos utilitários - categoria de teste 0577"
+  },
+  {
+    "name": "Picape 0578",
+    "description": "Veículos com caçamba - categoria de teste 0578"
+  },
+  {
+    "name": "Elétrico 0579",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0579"
+  },
+  {
+    "name": "Híbrido 0580",
+    "description": "Veículos com motor híbrido - categoria de teste 0580"
+  },
+  {
+    "name": "Carro 0581",
+    "description": "Veículos de passeio - categoria de teste 0581"
+  },
+  {
+    "name": "Moto 0582",
+    "description": "Motocicletas e scooters - categoria de teste 0582"
+  },
+  {
+    "name": "Caminhonete 0583",
+    "description": "Veículos utilitários leves - categoria de teste 0583"
+  },
+  {
+    "name": "Van 0584",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0584"
+  },
+  {
+    "name": "Caminhão 0585",
+    "description": "Veículos de carga - categoria de teste 0585"
+  },
+  {
+    "name": "Ônibus 0586",
+    "description": "Veículos para transporte coletivo - categoria de teste 0586"
+  },
+  {
+    "name": "SUV 0587",
+    "description": "Veículos esportivos utilitários - categoria de teste 0587"
+  },
+  {
+    "name": "Picape 0588",
+    "description": "Veículos com caçamba - categoria de teste 0588"
+  },
+  {
+    "name": "Elétrico 0589",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0589"
+  },
+  {
+    "name": "Híbrido 0590",
+    "description": "Veículos com motor híbrido - categoria de teste 0590"
+  },
+  {
+    "name": "Carro 0591",
+    "description": "Veículos de passeio - categoria de teste 0591"
+  },
+  {
+    "name": "Moto 0592",
+    "description": "Motocicletas e scooters - categoria de teste 0592"
+  },
+  {
+    "name": "Caminhonete 0593",
+    "description": "Veículos utilitários leves - categoria de teste 0593"
+  },
+  {
+    "name": "Van 0594",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0594"
+  },
+  {
+    "name": "Caminhão 0595",
+    "description": "Veículos de carga - categoria de teste 0595"
+  },
+  {
+    "name": "Ônibus 0596",
+    "description": "Veículos para transporte coletivo - categoria de teste 0596"
+  },
+  {
+    "name": "SUV 0597",
+    "description": "Veículos esportivos utilitários - categoria de teste 0597"
+  },
+  {
+    "name": "Picape 0598",
+    "description": "Veículos com caçamba - categoria de teste 0598"
+  },
+  {
+    "name": "Elétrico 0599",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0599"
+  },
+  {
+    "name": "Híbrido 0600",
+    "description": "Veículos com motor híbrido - categoria de teste 0600"
+  },
+  {
+    "name": "Carro 0601",
+    "description": "Veículos de passeio - categoria de teste 0601"
+  },
+  {
+    "name": "Moto 0602",
+    "description": "Motocicletas e scooters - categoria de teste 0602"
+  },
+  {
+    "name": "Caminhonete 0603",
+    "description": "Veículos utilitários leves - categoria de teste 0603"
+  },
+  {
+    "name": "Van 0604",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0604"
+  },
+  {
+    "name": "Caminhão 0605",
+    "description": "Veículos de carga - categoria de teste 0605"
+  },
+  {
+    "name": "Ônibus 0606",
+    "description": "Veículos para transporte coletivo - categoria de teste 0606"
+  },
+  {
+    "name": "SUV 0607",
+    "description": "Veículos esportivos utilitários - categoria de teste 0607"
+  },
+  {
+    "name": "Picape 0608",
+    "description": "Veículos com caçamba - categoria de teste 0608"
+  },
+  {
+    "name": "Elétrico 0609",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0609"
+  },
+  {
+    "name": "Híbrido 0610",
+    "description": "Veículos com motor híbrido - categoria de teste 0610"
+  },
+  {
+    "name": "Carro 0611",
+    "description": "Veículos de passeio - categoria de teste 0611"
+  },
+  {
+    "name": "Moto 0612",
+    "description": "Motocicletas e scooters - categoria de teste 0612"
+  },
+  {
+    "name": "Caminhonete 0613",
+    "description": "Veículos utilitários leves - categoria de teste 0613"
+  },
+  {
+    "name": "Van 0614",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0614"
+  },
+  {
+    "name": "Caminhão 0615",
+    "description": "Veículos de carga - categoria de teste 0615"
+  },
+  {
+    "name": "Ônibus 0616",
+    "description": "Veículos para transporte coletivo - categoria de teste 0616"
+  },
+  {
+    "name": "SUV 0617",
+    "description": "Veículos esportivos utilitários - categoria de teste 0617"
+  },
+  {
+    "name": "Picape 0618",
+    "description": "Veículos com caçamba - categoria de teste 0618"
+  },
+  {
+    "name": "Elétrico 0619",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0619"
+  },
+  {
+    "name": "Híbrido 0620",
+    "description": "Veículos com motor híbrido - categoria de teste 0620"
+  },
+  {
+    "name": "Carro 0621",
+    "description": "Veículos de passeio - categoria de teste 0621"
+  },
+  {
+    "name": "Moto 0622",
+    "description": "Motocicletas e scooters - categoria de teste 0622"
+  },
+  {
+    "name": "Caminhonete 0623",
+    "description": "Veículos utilitários leves - categoria de teste 0623"
+  },
+  {
+    "name": "Van 0624",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0624"
+  },
+  {
+    "name": "Caminhão 0625",
+    "description": "Veículos de carga - categoria de teste 0625"
+  },
+  {
+    "name": "Ônibus 0626",
+    "description": "Veículos para transporte coletivo - categoria de teste 0626"
+  },
+  {
+    "name": "SUV 0627",
+    "description": "Veículos esportivos utilitários - categoria de teste 0627"
+  },
+  {
+    "name": "Picape 0628",
+    "description": "Veículos com caçamba - categoria de teste 0628"
+  },
+  {
+    "name": "Elétrico 0629",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0629"
+  },
+  {
+    "name": "Híbrido 0630",
+    "description": "Veículos com motor híbrido - categoria de teste 0630"
+  },
+  {
+    "name": "Carro 0631",
+    "description": "Veículos de passeio - categoria de teste 0631"
+  },
+  {
+    "name": "Moto 0632",
+    "description": "Motocicletas e scooters - categoria de teste 0632"
+  },
+  {
+    "name": "Caminhonete 0633",
+    "description": "Veículos utilitários leves - categoria de teste 0633"
+  },
+  {
+    "name": "Van 0634",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0634"
+  },
+  {
+    "name": "Caminhão 0635",
+    "description": "Veículos de carga - categoria de teste 0635"
+  },
+  {
+    "name": "Ônibus 0636",
+    "description": "Veículos para transporte coletivo - categoria de teste 0636"
+  },
+  {
+    "name": "SUV 0637",
+    "description": "Veículos esportivos utilitários - categoria de teste 0637"
+  },
+  {
+    "name": "Picape 0638",
+    "description": "Veículos com caçamba - categoria de teste 0638"
+  },
+  {
+    "name": "Elétrico 0639",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0639"
+  },
+  {
+    "name": "Híbrido 0640",
+    "description": "Veículos com motor híbrido - categoria de teste 0640"
+  },
+  {
+    "name": "Carro 0641",
+    "description": "Veículos de passeio - categoria de teste 0641"
+  },
+  {
+    "name": "Moto 0642",
+    "description": "Motocicletas e scooters - categoria de teste 0642"
+  },
+  {
+    "name": "Caminhonete 0643",
+    "description": "Veículos utilitários leves - categoria de teste 0643"
+  },
+  {
+    "name": "Van 0644",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0644"
+  },
+  {
+    "name": "Caminhão 0645",
+    "description": "Veículos de carga - categoria de teste 0645"
+  },
+  {
+    "name": "Ônibus 0646",
+    "description": "Veículos para transporte coletivo - categoria de teste 0646"
+  },
+  {
+    "name": "SUV 0647",
+    "description": "Veículos esportivos utilitários - categoria de teste 0647"
+  },
+  {
+    "name": "Picape 0648",
+    "description": "Veículos com caçamba - categoria de teste 0648"
+  },
+  {
+    "name": "Elétrico 0649",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0649"
+  },
+  {
+    "name": "Híbrido 0650",
+    "description": "Veículos com motor híbrido - categoria de teste 0650"
+  },
+  {
+    "name": "Carro 0651",
+    "description": "Veículos de passeio - categoria de teste 0651"
+  },
+  {
+    "name": "Moto 0652",
+    "description": "Motocicletas e scooters - categoria de teste 0652"
+  },
+  {
+    "name": "Caminhonete 0653",
+    "description": "Veículos utilitários leves - categoria de teste 0653"
+  },
+  {
+    "name": "Van 0654",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0654"
+  },
+  {
+    "name": "Caminhão 0655",
+    "description": "Veículos de carga - categoria de teste 0655"
+  },
+  {
+    "name": "Ônibus 0656",
+    "description": "Veículos para transporte coletivo - categoria de teste 0656"
+  },
+  {
+    "name": "SUV 0657",
+    "description": "Veículos esportivos utilitários - categoria de teste 0657"
+  },
+  {
+    "name": "Picape 0658",
+    "description": "Veículos com caçamba - categoria de teste 0658"
+  },
+  {
+    "name": "Elétrico 0659",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0659"
+  },
+  {
+    "name": "Híbrido 0660",
+    "description": "Veículos com motor híbrido - categoria de teste 0660"
+  },
+  {
+    "name": "Carro 0661",
+    "description": "Veículos de passeio - categoria de teste 0661"
+  },
+  {
+    "name": "Moto 0662",
+    "description": "Motocicletas e scooters - categoria de teste 0662"
+  },
+  {
+    "name": "Caminhonete 0663",
+    "description": "Veículos utilitários leves - categoria de teste 0663"
+  },
+  {
+    "name": "Van 0664",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0664"
+  },
+  {
+    "name": "Caminhão 0665",
+    "description": "Veículos de carga - categoria de teste 0665"
+  },
+  {
+    "name": "Ônibus 0666",
+    "description": "Veículos para transporte coletivo - categoria de teste 0666"
+  },
+  {
+    "name": "SUV 0667",
+    "description": "Veículos esportivos utilitários - categoria de teste 0667"
+  },
+  {
+    "name": "Picape 0668",
+    "description": "Veículos com caçamba - categoria de teste 0668"
+  },
+  {
+    "name": "Elétrico 0669",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0669"
+  },
+  {
+    "name": "Híbrido 0670",
+    "description": "Veículos com motor híbrido - categoria de teste 0670"
+  },
+  {
+    "name": "Carro 0671",
+    "description": "Veículos de passeio - categoria de teste 0671"
+  },
+  {
+    "name": "Moto 0672",
+    "description": "Motocicletas e scooters - categoria de teste 0672"
+  },
+  {
+    "name": "Caminhonete 0673",
+    "description": "Veículos utilitários leves - categoria de teste 0673"
+  },
+  {
+    "name": "Van 0674",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0674"
+  },
+  {
+    "name": "Caminhão 0675",
+    "description": "Veículos de carga - categoria de teste 0675"
+  },
+  {
+    "name": "Ônibus 0676",
+    "description": "Veículos para transporte coletivo - categoria de teste 0676"
+  },
+  {
+    "name": "SUV 0677",
+    "description": "Veículos esportivos utilitários - categoria de teste 0677"
+  },
+  {
+    "name": "Picape 0678",
+    "description": "Veículos com caçamba - categoria de teste 0678"
+  },
+  {
+    "name": "Elétrico 0679",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0679"
+  },
+  {
+    "name": "Híbrido 0680",
+    "description": "Veículos com motor híbrido - categoria de teste 0680"
+  },
+  {
+    "name": "Carro 0681",
+    "description": "Veículos de passeio - categoria de teste 0681"
+  },
+  {
+    "name": "Moto 0682",
+    "description": "Motocicletas e scooters - categoria de teste 0682"
+  },
+  {
+    "name": "Caminhonete 0683",
+    "description": "Veículos utilitários leves - categoria de teste 0683"
+  },
+  {
+    "name": "Van 0684",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0684"
+  },
+  {
+    "name": "Caminhão 0685",
+    "description": "Veículos de carga - categoria de teste 0685"
+  },
+  {
+    "name": "Ônibus 0686",
+    "description": "Veículos para transporte coletivo - categoria de teste 0686"
+  },
+  {
+    "name": "SUV 0687",
+    "description": "Veículos esportivos utilitários - categoria de teste 0687"
+  },
+  {
+    "name": "Picape 0688",
+    "description": "Veículos com caçamba - categoria de teste 0688"
+  },
+  {
+    "name": "Elétrico 0689",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0689"
+  },
+  {
+    "name": "Híbrido 0690",
+    "description": "Veículos com motor híbrido - categoria de teste 0690"
+  },
+  {
+    "name": "Carro 0691",
+    "description": "Veículos de passeio - categoria de teste 0691"
+  },
+  {
+    "name": "Moto 0692",
+    "description": "Motocicletas e scooters - categoria de teste 0692"
+  },
+  {
+    "name": "Caminhonete 0693",
+    "description": "Veículos utilitários leves - categoria de teste 0693"
+  },
+  {
+    "name": "Van 0694",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0694"
+  },
+  {
+    "name": "Caminhão 0695",
+    "description": "Veículos de carga - categoria de teste 0695"
+  },
+  {
+    "name": "Ônibus 0696",
+    "description": "Veículos para transporte coletivo - categoria de teste 0696"
+  },
+  {
+    "name": "SUV 0697",
+    "description": "Veículos esportivos utilitários - categoria de teste 0697"
+  },
+  {
+    "name": "Picape 0698",
+    "description": "Veículos com caçamba - categoria de teste 0698"
+  },
+  {
+    "name": "Elétrico 0699",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0699"
+  },
+  {
+    "name": "Híbrido 0700",
+    "description": "Veículos com motor híbrido - categoria de teste 0700"
+  },
+  {
+    "name": "Carro 0701",
+    "description": "Veículos de passeio - categoria de teste 0701"
+  },
+  {
+    "name": "Moto 0702",
+    "description": "Motocicletas e scooters - categoria de teste 0702"
+  },
+  {
+    "name": "Caminhonete 0703",
+    "description": "Veículos utilitários leves - categoria de teste 0703"
+  },
+  {
+    "name": "Van 0704",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0704"
+  },
+  {
+    "name": "Caminhão 0705",
+    "description": "Veículos de carga - categoria de teste 0705"
+  },
+  {
+    "name": "Ônibus 0706",
+    "description": "Veículos para transporte coletivo - categoria de teste 0706"
+  },
+  {
+    "name": "SUV 0707",
+    "description": "Veículos esportivos utilitários - categoria de teste 0707"
+  },
+  {
+    "name": "Picape 0708",
+    "description": "Veículos com caçamba - categoria de teste 0708"
+  },
+  {
+    "name": "Elétrico 0709",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0709"
+  },
+  {
+    "name": "Híbrido 0710",
+    "description": "Veículos com motor híbrido - categoria de teste 0710"
+  },
+  {
+    "name": "Carro 0711",
+    "description": "Veículos de passeio - categoria de teste 0711"
+  },
+  {
+    "name": "Moto 0712",
+    "description": "Motocicletas e scooters - categoria de teste 0712"
+  },
+  {
+    "name": "Caminhonete 0713",
+    "description": "Veículos utilitários leves - categoria de teste 0713"
+  },
+  {
+    "name": "Van 0714",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0714"
+  },
+  {
+    "name": "Caminhão 0715",
+    "description": "Veículos de carga - categoria de teste 0715"
+  },
+  {
+    "name": "Ônibus 0716",
+    "description": "Veículos para transporte coletivo - categoria de teste 0716"
+  },
+  {
+    "name": "SUV 0717",
+    "description": "Veículos esportivos utilitários - categoria de teste 0717"
+  },
+  {
+    "name": "Picape 0718",
+    "description": "Veículos com caçamba - categoria de teste 0718"
+  },
+  {
+    "name": "Elétrico 0719",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0719"
+  },
+  {
+    "name": "Híbrido 0720",
+    "description": "Veículos com motor híbrido - categoria de teste 0720"
+  },
+  {
+    "name": "Carro 0721",
+    "description": "Veículos de passeio - categoria de teste 0721"
+  },
+  {
+    "name": "Moto 0722",
+    "description": "Motocicletas e scooters - categoria de teste 0722"
+  },
+  {
+    "name": "Caminhonete 0723",
+    "description": "Veículos utilitários leves - categoria de teste 0723"
+  },
+  {
+    "name": "Van 0724",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0724"
+  },
+  {
+    "name": "Caminhão 0725",
+    "description": "Veículos de carga - categoria de teste 0725"
+  },
+  {
+    "name": "Ônibus 0726",
+    "description": "Veículos para transporte coletivo - categoria de teste 0726"
+  },
+  {
+    "name": "SUV 0727",
+    "description": "Veículos esportivos utilitários - categoria de teste 0727"
+  },
+  {
+    "name": "Picape 0728",
+    "description": "Veículos com caçamba - categoria de teste 0728"
+  },
+  {
+    "name": "Elétrico 0729",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0729"
+  },
+  {
+    "name": "Híbrido 0730",
+    "description": "Veículos com motor híbrido - categoria de teste 0730"
+  },
+  {
+    "name": "Carro 0731",
+    "description": "Veículos de passeio - categoria de teste 0731"
+  },
+  {
+    "name": "Moto 0732",
+    "description": "Motocicletas e scooters - categoria de teste 0732"
+  },
+  {
+    "name": "Caminhonete 0733",
+    "description": "Veículos utilitários leves - categoria de teste 0733"
+  },
+  {
+    "name": "Van 0734",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0734"
+  },
+  {
+    "name": "Caminhão 0735",
+    "description": "Veículos de carga - categoria de teste 0735"
+  },
+  {
+    "name": "Ônibus 0736",
+    "description": "Veículos para transporte coletivo - categoria de teste 0736"
+  },
+  {
+    "name": "SUV 0737",
+    "description": "Veículos esportivos utilitários - categoria de teste 0737"
+  },
+  {
+    "name": "Picape 0738",
+    "description": "Veículos com caçamba - categoria de teste 0738"
+  },
+  {
+    "name": "Elétrico 0739",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0739"
+  },
+  {
+    "name": "Híbrido 0740",
+    "description": "Veículos com motor híbrido - categoria de teste 0740"
+  },
+  {
+    "name": "Carro 0741",
+    "description": "Veículos de passeio - categoria de teste 0741"
+  },
+  {
+    "name": "Moto 0742",
+    "description": "Motocicletas e scooters - categoria de teste 0742"
+  },
+  {
+    "name": "Caminhonete 0743",
+    "description": "Veículos utilitários leves - categoria de teste 0743"
+  },
+  {
+    "name": "Van 0744",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0744"
+  },
+  {
+    "name": "Caminhão 0745",
+    "description": "Veículos de carga - categoria de teste 0745"
+  },
+  {
+    "name": "Ônibus 0746",
+    "description": "Veículos para transporte coletivo - categoria de teste 0746"
+  },
+  {
+    "name": "SUV 0747",
+    "description": "Veículos esportivos utilitários - categoria de teste 0747"
+  },
+  {
+    "name": "Picape 0748",
+    "description": "Veículos com caçamba - categoria de teste 0748"
+  },
+  {
+    "name": "Elétrico 0749",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0749"
+  },
+  {
+    "name": "Híbrido 0750",
+    "description": "Veículos com motor híbrido - categoria de teste 0750"
+  },
+  {
+    "name": "Carro 0751",
+    "description": "Veículos de passeio - categoria de teste 0751"
+  },
+  {
+    "name": "Moto 0752",
+    "description": "Motocicletas e scooters - categoria de teste 0752"
+  },
+  {
+    "name": "Caminhonete 0753",
+    "description": "Veículos utilitários leves - categoria de teste 0753"
+  },
+  {
+    "name": "Van 0754",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0754"
+  },
+  {
+    "name": "Caminhão 0755",
+    "description": "Veículos de carga - categoria de teste 0755"
+  },
+  {
+    "name": "Ônibus 0756",
+    "description": "Veículos para transporte coletivo - categoria de teste 0756"
+  },
+  {
+    "name": "SUV 0757",
+    "description": "Veículos esportivos utilitários - categoria de teste 0757"
+  },
+  {
+    "name": "Picape 0758",
+    "description": "Veículos com caçamba - categoria de teste 0758"
+  },
+  {
+    "name": "Elétrico 0759",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0759"
+  },
+  {
+    "name": "Híbrido 0760",
+    "description": "Veículos com motor híbrido - categoria de teste 0760"
+  },
+  {
+    "name": "Carro 0761",
+    "description": "Veículos de passeio - categoria de teste 0761"
+  },
+  {
+    "name": "Moto 0762",
+    "description": "Motocicletas e scooters - categoria de teste 0762"
+  },
+  {
+    "name": "Caminhonete 0763",
+    "description": "Veículos utilitários leves - categoria de teste 0763"
+  },
+  {
+    "name": "Van 0764",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0764"
+  },
+  {
+    "name": "Caminhão 0765",
+    "description": "Veículos de carga - categoria de teste 0765"
+  },
+  {
+    "name": "Ônibus 0766",
+    "description": "Veículos para transporte coletivo - categoria de teste 0766"
+  },
+  {
+    "name": "SUV 0767",
+    "description": "Veículos esportivos utilitários - categoria de teste 0767"
+  },
+  {
+    "name": "Picape 0768",
+    "description": "Veículos com caçamba - categoria de teste 0768"
+  },
+  {
+    "name": "Elétrico 0769",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0769"
+  },
+  {
+    "name": "Híbrido 0770",
+    "description": "Veículos com motor híbrido - categoria de teste 0770"
+  },
+  {
+    "name": "Carro 0771",
+    "description": "Veículos de passeio - categoria de teste 0771"
+  },
+  {
+    "name": "Moto 0772",
+    "description": "Motocicletas e scooters - categoria de teste 0772"
+  },
+  {
+    "name": "Caminhonete 0773",
+    "description": "Veículos utilitários leves - categoria de teste 0773"
+  },
+  {
+    "name": "Van 0774",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0774"
+  },
+  {
+    "name": "Caminhão 0775",
+    "description": "Veículos de carga - categoria de teste 0775"
+  },
+  {
+    "name": "Ônibus 0776",
+    "description": "Veículos para transporte coletivo - categoria de teste 0776"
+  },
+  {
+    "name": "SUV 0777",
+    "description": "Veículos esportivos utilitários - categoria de teste 0777"
+  },
+  {
+    "name": "Picape 0778",
+    "description": "Veículos com caçamba - categoria de teste 0778"
+  },
+  {
+    "name": "Elétrico 0779",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0779"
+  },
+  {
+    "name": "Híbrido 0780",
+    "description": "Veículos com motor híbrido - categoria de teste 0780"
+  },
+  {
+    "name": "Carro 0781",
+    "description": "Veículos de passeio - categoria de teste 0781"
+  },
+  {
+    "name": "Moto 0782",
+    "description": "Motocicletas e scooters - categoria de teste 0782"
+  },
+  {
+    "name": "Caminhonete 0783",
+    "description": "Veículos utilitários leves - categoria de teste 0783"
+  },
+  {
+    "name": "Van 0784",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0784"
+  },
+  {
+    "name": "Caminhão 0785",
+    "description": "Veículos de carga - categoria de teste 0785"
+  },
+  {
+    "name": "Ônibus 0786",
+    "description": "Veículos para transporte coletivo - categoria de teste 0786"
+  },
+  {
+    "name": "SUV 0787",
+    "description": "Veículos esportivos utilitários - categoria de teste 0787"
+  },
+  {
+    "name": "Picape 0788",
+    "description": "Veículos com caçamba - categoria de teste 0788"
+  },
+  {
+    "name": "Elétrico 0789",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0789"
+  },
+  {
+    "name": "Híbrido 0790",
+    "description": "Veículos com motor híbrido - categoria de teste 0790"
+  },
+  {
+    "name": "Carro 0791",
+    "description": "Veículos de passeio - categoria de teste 0791"
+  },
+  {
+    "name": "Moto 0792",
+    "description": "Motocicletas e scooters - categoria de teste 0792"
+  },
+  {
+    "name": "Caminhonete 0793",
+    "description": "Veículos utilitários leves - categoria de teste 0793"
+  },
+  {
+    "name": "Van 0794",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0794"
+  },
+  {
+    "name": "Caminhão 0795",
+    "description": "Veículos de carga - categoria de teste 0795"
+  },
+  {
+    "name": "Ônibus 0796",
+    "description": "Veículos para transporte coletivo - categoria de teste 0796"
+  },
+  {
+    "name": "SUV 0797",
+    "description": "Veículos esportivos utilitários - categoria de teste 0797"
+  },
+  {
+    "name": "Picape 0798",
+    "description": "Veículos com caçamba - categoria de teste 0798"
+  },
+  {
+    "name": "Elétrico 0799",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0799"
+  },
+  {
+    "name": "Híbrido 0800",
+    "description": "Veículos com motor híbrido - categoria de teste 0800"
+  },
+  {
+    "name": "Carro 0801",
+    "description": "Veículos de passeio - categoria de teste 0801"
+  },
+  {
+    "name": "Moto 0802",
+    "description": "Motocicletas e scooters - categoria de teste 0802"
+  },
+  {
+    "name": "Caminhonete 0803",
+    "description": "Veículos utilitários leves - categoria de teste 0803"
+  },
+  {
+    "name": "Van 0804",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0804"
+  },
+  {
+    "name": "Caminhão 0805",
+    "description": "Veículos de carga - categoria de teste 0805"
+  },
+  {
+    "name": "Ônibus 0806",
+    "description": "Veículos para transporte coletivo - categoria de teste 0806"
+  },
+  {
+    "name": "SUV 0807",
+    "description": "Veículos esportivos utilitários - categoria de teste 0807"
+  },
+  {
+    "name": "Picape 0808",
+    "description": "Veículos com caçamba - categoria de teste 0808"
+  },
+  {
+    "name": "Elétrico 0809",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0809"
+  },
+  {
+    "name": "Híbrido 0810",
+    "description": "Veículos com motor híbrido - categoria de teste 0810"
+  },
+  {
+    "name": "Carro 0811",
+    "description": "Veículos de passeio - categoria de teste 0811"
+  },
+  {
+    "name": "Moto 0812",
+    "description": "Motocicletas e scooters - categoria de teste 0812"
+  },
+  {
+    "name": "Caminhonete 0813",
+    "description": "Veículos utilitários leves - categoria de teste 0813"
+  },
+  {
+    "name": "Van 0814",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0814"
+  },
+  {
+    "name": "Caminhão 0815",
+    "description": "Veículos de carga - categoria de teste 0815"
+  },
+  {
+    "name": "Ônibus 0816",
+    "description": "Veículos para transporte coletivo - categoria de teste 0816"
+  },
+  {
+    "name": "SUV 0817",
+    "description": "Veículos esportivos utilitários - categoria de teste 0817"
+  },
+  {
+    "name": "Picape 0818",
+    "description": "Veículos com caçamba - categoria de teste 0818"
+  },
+  {
+    "name": "Elétrico 0819",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0819"
+  },
+  {
+    "name": "Híbrido 0820",
+    "description": "Veículos com motor híbrido - categoria de teste 0820"
+  },
+  {
+    "name": "Carro 0821",
+    "description": "Veículos de passeio - categoria de teste 0821"
+  },
+  {
+    "name": "Moto 0822",
+    "description": "Motocicletas e scooters - categoria de teste 0822"
+  },
+  {
+    "name": "Caminhonete 0823",
+    "description": "Veículos utilitários leves - categoria de teste 0823"
+  },
+  {
+    "name": "Van 0824",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0824"
+  },
+  {
+    "name": "Caminhão 0825",
+    "description": "Veículos de carga - categoria de teste 0825"
+  },
+  {
+    "name": "Ônibus 0826",
+    "description": "Veículos para transporte coletivo - categoria de teste 0826"
+  },
+  {
+    "name": "SUV 0827",
+    "description": "Veículos esportivos utilitários - categoria de teste 0827"
+  },
+  {
+    "name": "Picape 0828",
+    "description": "Veículos com caçamba - categoria de teste 0828"
+  },
+  {
+    "name": "Elétrico 0829",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0829"
+  },
+  {
+    "name": "Híbrido 0830",
+    "description": "Veículos com motor híbrido - categoria de teste 0830"
+  },
+  {
+    "name": "Carro 0831",
+    "description": "Veículos de passeio - categoria de teste 0831"
+  },
+  {
+    "name": "Moto 0832",
+    "description": "Motocicletas e scooters - categoria de teste 0832"
+  },
+  {
+    "name": "Caminhonete 0833",
+    "description": "Veículos utilitários leves - categoria de teste 0833"
+  },
+  {
+    "name": "Van 0834",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0834"
+  },
+  {
+    "name": "Caminhão 0835",
+    "description": "Veículos de carga - categoria de teste 0835"
+  },
+  {
+    "name": "Ônibus 0836",
+    "description": "Veículos para transporte coletivo - categoria de teste 0836"
+  },
+  {
+    "name": "SUV 0837",
+    "description": "Veículos esportivos utilitários - categoria de teste 0837"
+  },
+  {
+    "name": "Picape 0838",
+    "description": "Veículos com caçamba - categoria de teste 0838"
+  },
+  {
+    "name": "Elétrico 0839",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0839"
+  },
+  {
+    "name": "Híbrido 0840",
+    "description": "Veículos com motor híbrido - categoria de teste 0840"
+  },
+  {
+    "name": "Carro 0841",
+    "description": "Veículos de passeio - categoria de teste 0841"
+  },
+  {
+    "name": "Moto 0842",
+    "description": "Motocicletas e scooters - categoria de teste 0842"
+  },
+  {
+    "name": "Caminhonete 0843",
+    "description": "Veículos utilitários leves - categoria de teste 0843"
+  },
+  {
+    "name": "Van 0844",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0844"
+  },
+  {
+    "name": "Caminhão 0845",
+    "description": "Veículos de carga - categoria de teste 0845"
+  },
+  {
+    "name": "Ônibus 0846",
+    "description": "Veículos para transporte coletivo - categoria de teste 0846"
+  },
+  {
+    "name": "SUV 0847",
+    "description": "Veículos esportivos utilitários - categoria de teste 0847"
+  },
+  {
+    "name": "Picape 0848",
+    "description": "Veículos com caçamba - categoria de teste 0848"
+  },
+  {
+    "name": "Elétrico 0849",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0849"
+  },
+  {
+    "name": "Híbrido 0850",
+    "description": "Veículos com motor híbrido - categoria de teste 0850"
+  },
+  {
+    "name": "Carro 0851",
+    "description": "Veículos de passeio - categoria de teste 0851"
+  },
+  {
+    "name": "Moto 0852",
+    "description": "Motocicletas e scooters - categoria de teste 0852"
+  },
+  {
+    "name": "Caminhonete 0853",
+    "description": "Veículos utilitários leves - categoria de teste 0853"
+  },
+  {
+    "name": "Van 0854",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0854"
+  },
+  {
+    "name": "Caminhão 0855",
+    "description": "Veículos de carga - categoria de teste 0855"
+  },
+  {
+    "name": "Ônibus 0856",
+    "description": "Veículos para transporte coletivo - categoria de teste 0856"
+  },
+  {
+    "name": "SUV 0857",
+    "description": "Veículos esportivos utilitários - categoria de teste 0857"
+  },
+  {
+    "name": "Picape 0858",
+    "description": "Veículos com caçamba - categoria de teste 0858"
+  },
+  {
+    "name": "Elétrico 0859",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0859"
+  },
+  {
+    "name": "Híbrido 0860",
+    "description": "Veículos com motor híbrido - categoria de teste 0860"
+  },
+  {
+    "name": "Carro 0861",
+    "description": "Veículos de passeio - categoria de teste 0861"
+  },
+  {
+    "name": "Moto 0862",
+    "description": "Motocicletas e scooters - categoria de teste 0862"
+  },
+  {
+    "name": "Caminhonete 0863",
+    "description": "Veículos utilitários leves - categoria de teste 0863"
+  },
+  {
+    "name": "Van 0864",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0864"
+  },
+  {
+    "name": "Caminhão 0865",
+    "description": "Veículos de carga - categoria de teste 0865"
+  },
+  {
+    "name": "Ônibus 0866",
+    "description": "Veículos para transporte coletivo - categoria de teste 0866"
+  },
+  {
+    "name": "SUV 0867",
+    "description": "Veículos esportivos utilitários - categoria de teste 0867"
+  },
+  {
+    "name": "Picape 0868",
+    "description": "Veículos com caçamba - categoria de teste 0868"
+  },
+  {
+    "name": "Elétrico 0869",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0869"
+  },
+  {
+    "name": "Híbrido 0870",
+    "description": "Veículos com motor híbrido - categoria de teste 0870"
+  },
+  {
+    "name": "Carro 0871",
+    "description": "Veículos de passeio - categoria de teste 0871"
+  },
+  {
+    "name": "Moto 0872",
+    "description": "Motocicletas e scooters - categoria de teste 0872"
+  },
+  {
+    "name": "Caminhonete 0873",
+    "description": "Veículos utilitários leves - categoria de teste 0873"
+  },
+  {
+    "name": "Van 0874",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0874"
+  },
+  {
+    "name": "Caminhão 0875",
+    "description": "Veículos de carga - categoria de teste 0875"
+  },
+  {
+    "name": "Ônibus 0876",
+    "description": "Veículos para transporte coletivo - categoria de teste 0876"
+  },
+  {
+    "name": "SUV 0877",
+    "description": "Veículos esportivos utilitários - categoria de teste 0877"
+  },
+  {
+    "name": "Picape 0878",
+    "description": "Veículos com caçamba - categoria de teste 0878"
+  },
+  {
+    "name": "Elétrico 0879",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0879"
+  },
+  {
+    "name": "Híbrido 0880",
+    "description": "Veículos com motor híbrido - categoria de teste 0880"
+  },
+  {
+    "name": "Carro 0881",
+    "description": "Veículos de passeio - categoria de teste 0881"
+  },
+  {
+    "name": "Moto 0882",
+    "description": "Motocicletas e scooters - categoria de teste 0882"
+  },
+  {
+    "name": "Caminhonete 0883",
+    "description": "Veículos utilitários leves - categoria de teste 0883"
+  },
+  {
+    "name": "Van 0884",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0884"
+  },
+  {
+    "name": "Caminhão 0885",
+    "description": "Veículos de carga - categoria de teste 0885"
+  },
+  {
+    "name": "Ônibus 0886",
+    "description": "Veículos para transporte coletivo - categoria de teste 0886"
+  },
+  {
+    "name": "SUV 0887",
+    "description": "Veículos esportivos utilitários - categoria de teste 0887"
+  },
+  {
+    "name": "Picape 0888",
+    "description": "Veículos com caçamba - categoria de teste 0888"
+  },
+  {
+    "name": "Elétrico 0889",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0889"
+  },
+  {
+    "name": "Híbrido 0890",
+    "description": "Veículos com motor híbrido - categoria de teste 0890"
+  },
+  {
+    "name": "Carro 0891",
+    "description": "Veículos de passeio - categoria de teste 0891"
+  },
+  {
+    "name": "Moto 0892",
+    "description": "Motocicletas e scooters - categoria de teste 0892"
+  },
+  {
+    "name": "Caminhonete 0893",
+    "description": "Veículos utilitários leves - categoria de teste 0893"
+  },
+  {
+    "name": "Van 0894",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0894"
+  },
+  {
+    "name": "Caminhão 0895",
+    "description": "Veículos de carga - categoria de teste 0895"
+  },
+  {
+    "name": "Ônibus 0896",
+    "description": "Veículos para transporte coletivo - categoria de teste 0896"
+  },
+  {
+    "name": "SUV 0897",
+    "description": "Veículos esportivos utilitários - categoria de teste 0897"
+  },
+  {
+    "name": "Picape 0898",
+    "description": "Veículos com caçamba - categoria de teste 0898"
+  },
+  {
+    "name": "Elétrico 0899",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0899"
+  },
+  {
+    "name": "Híbrido 0900",
+    "description": "Veículos com motor híbrido - categoria de teste 0900"
+  },
+  {
+    "name": "Carro 0901",
+    "description": "Veículos de passeio - categoria de teste 0901"
+  },
+  {
+    "name": "Moto 0902",
+    "description": "Motocicletas e scooters - categoria de teste 0902"
+  },
+  {
+    "name": "Caminhonete 0903",
+    "description": "Veículos utilitários leves - categoria de teste 0903"
+  },
+  {
+    "name": "Van 0904",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0904"
+  },
+  {
+    "name": "Caminhão 0905",
+    "description": "Veículos de carga - categoria de teste 0905"
+  },
+  {
+    "name": "Ônibus 0906",
+    "description": "Veículos para transporte coletivo - categoria de teste 0906"
+  },
+  {
+    "name": "SUV 0907",
+    "description": "Veículos esportivos utilitários - categoria de teste 0907"
+  },
+  {
+    "name": "Picape 0908",
+    "description": "Veículos com caçamba - categoria de teste 0908"
+  },
+  {
+    "name": "Elétrico 0909",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0909"
+  },
+  {
+    "name": "Híbrido 0910",
+    "description": "Veículos com motor híbrido - categoria de teste 0910"
+  },
+  {
+    "name": "Carro 0911",
+    "description": "Veículos de passeio - categoria de teste 0911"
+  },
+  {
+    "name": "Moto 0912",
+    "description": "Motocicletas e scooters - categoria de teste 0912"
+  },
+  {
+    "name": "Caminhonete 0913",
+    "description": "Veículos utilitários leves - categoria de teste 0913"
+  },
+  {
+    "name": "Van 0914",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0914"
+  },
+  {
+    "name": "Caminhão 0915",
+    "description": "Veículos de carga - categoria de teste 0915"
+  },
+  {
+    "name": "Ônibus 0916",
+    "description": "Veículos para transporte coletivo - categoria de teste 0916"
+  },
+  {
+    "name": "SUV 0917",
+    "description": "Veículos esportivos utilitários - categoria de teste 0917"
+  },
+  {
+    "name": "Picape 0918",
+    "description": "Veículos com caçamba - categoria de teste 0918"
+  },
+  {
+    "name": "Elétrico 0919",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0919"
+  },
+  {
+    "name": "Híbrido 0920",
+    "description": "Veículos com motor híbrido - categoria de teste 0920"
+  },
+  {
+    "name": "Carro 0921",
+    "description": "Veículos de passeio - categoria de teste 0921"
+  },
+  {
+    "name": "Moto 0922",
+    "description": "Motocicletas e scooters - categoria de teste 0922"
+  },
+  {
+    "name": "Caminhonete 0923",
+    "description": "Veículos utilitários leves - categoria de teste 0923"
+  },
+  {
+    "name": "Van 0924",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0924"
+  },
+  {
+    "name": "Caminhão 0925",
+    "description": "Veículos de carga - categoria de teste 0925"
+  },
+  {
+    "name": "Ônibus 0926",
+    "description": "Veículos para transporte coletivo - categoria de teste 0926"
+  },
+  {
+    "name": "SUV 0927",
+    "description": "Veículos esportivos utilitários - categoria de teste 0927"
+  },
+  {
+    "name": "Picape 0928",
+    "description": "Veículos com caçamba - categoria de teste 0928"
+  },
+  {
+    "name": "Elétrico 0929",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0929"
+  },
+  {
+    "name": "Híbrido 0930",
+    "description": "Veículos com motor híbrido - categoria de teste 0930"
+  },
+  {
+    "name": "Carro 0931",
+    "description": "Veículos de passeio - categoria de teste 0931"
+  },
+  {
+    "name": "Moto 0932",
+    "description": "Motocicletas e scooters - categoria de teste 0932"
+  },
+  {
+    "name": "Caminhonete 0933",
+    "description": "Veículos utilitários leves - categoria de teste 0933"
+  },
+  {
+    "name": "Van 0934",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0934"
+  },
+  {
+    "name": "Caminhão 0935",
+    "description": "Veículos de carga - categoria de teste 0935"
+  },
+  {
+    "name": "Ônibus 0936",
+    "description": "Veículos para transporte coletivo - categoria de teste 0936"
+  },
+  {
+    "name": "SUV 0937",
+    "description": "Veículos esportivos utilitários - categoria de teste 0937"
+  },
+  {
+    "name": "Picape 0938",
+    "description": "Veículos com caçamba - categoria de teste 0938"
+  },
+  {
+    "name": "Elétrico 0939",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0939"
+  },
+  {
+    "name": "Híbrido 0940",
+    "description": "Veículos com motor híbrido - categoria de teste 0940"
+  },
+  {
+    "name": "Carro 0941",
+    "description": "Veículos de passeio - categoria de teste 0941"
+  },
+  {
+    "name": "Moto 0942",
+    "description": "Motocicletas e scooters - categoria de teste 0942"
+  },
+  {
+    "name": "Caminhonete 0943",
+    "description": "Veículos utilitários leves - categoria de teste 0943"
+  },
+  {
+    "name": "Van 0944",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0944"
+  },
+  {
+    "name": "Caminhão 0945",
+    "description": "Veículos de carga - categoria de teste 0945"
+  },
+  {
+    "name": "Ônibus 0946",
+    "description": "Veículos para transporte coletivo - categoria de teste 0946"
+  },
+  {
+    "name": "SUV 0947",
+    "description": "Veículos esportivos utilitários - categoria de teste 0947"
+  },
+  {
+    "name": "Picape 0948",
+    "description": "Veículos com caçamba - categoria de teste 0948"
+  },
+  {
+    "name": "Elétrico 0949",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0949"
+  },
+  {
+    "name": "Híbrido 0950",
+    "description": "Veículos com motor híbrido - categoria de teste 0950"
+  },
+  {
+    "name": "Carro 0951",
+    "description": "Veículos de passeio - categoria de teste 0951"
+  },
+  {
+    "name": "Moto 0952",
+    "description": "Motocicletas e scooters - categoria de teste 0952"
+  },
+  {
+    "name": "Caminhonete 0953",
+    "description": "Veículos utilitários leves - categoria de teste 0953"
+  },
+  {
+    "name": "Van 0954",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0954"
+  },
+  {
+    "name": "Caminhão 0955",
+    "description": "Veículos de carga - categoria de teste 0955"
+  },
+  {
+    "name": "Ônibus 0956",
+    "description": "Veículos para transporte coletivo - categoria de teste 0956"
+  },
+  {
+    "name": "SUV 0957",
+    "description": "Veículos esportivos utilitários - categoria de teste 0957"
+  },
+  {
+    "name": "Picape 0958",
+    "description": "Veículos com caçamba - categoria de teste 0958"
+  },
+  {
+    "name": "Elétrico 0959",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0959"
+  },
+  {
+    "name": "Híbrido 0960",
+    "description": "Veículos com motor híbrido - categoria de teste 0960"
+  },
+  {
+    "name": "Carro 0961",
+    "description": "Veículos de passeio - categoria de teste 0961"
+  },
+  {
+    "name": "Moto 0962",
+    "description": "Motocicletas e scooters - categoria de teste 0962"
+  },
+  {
+    "name": "Caminhonete 0963",
+    "description": "Veículos utilitários leves - categoria de teste 0963"
+  },
+  {
+    "name": "Van 0964",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0964"
+  },
+  {
+    "name": "Caminhão 0965",
+    "description": "Veículos de carga - categoria de teste 0965"
+  },
+  {
+    "name": "Ônibus 0966",
+    "description": "Veículos para transporte coletivo - categoria de teste 0966"
+  },
+  {
+    "name": "SUV 0967",
+    "description": "Veículos esportivos utilitários - categoria de teste 0967"
+  },
+  {
+    "name": "Picape 0968",
+    "description": "Veículos com caçamba - categoria de teste 0968"
+  },
+  {
+    "name": "Elétrico 0969",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0969"
+  },
+  {
+    "name": "Híbrido 0970",
+    "description": "Veículos com motor híbrido - categoria de teste 0970"
+  },
+  {
+    "name": "Carro 0971",
+    "description": "Veículos de passeio - categoria de teste 0971"
+  },
+  {
+    "name": "Moto 0972",
+    "description": "Motocicletas e scooters - categoria de teste 0972"
+  },
+  {
+    "name": "Caminhonete 0973",
+    "description": "Veículos utilitários leves - categoria de teste 0973"
+  },
+  {
+    "name": "Van 0974",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0974"
+  },
+  {
+    "name": "Caminhão 0975",
+    "description": "Veículos de carga - categoria de teste 0975"
+  },
+  {
+    "name": "Ônibus 0976",
+    "description": "Veículos para transporte coletivo - categoria de teste 0976"
+  },
+  {
+    "name": "SUV 0977",
+    "description": "Veículos esportivos utilitários - categoria de teste 0977"
+  },
+  {
+    "name": "Picape 0978",
+    "description": "Veículos com caçamba - categoria de teste 0978"
+  },
+  {
+    "name": "Elétrico 0979",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0979"
+  },
+  {
+    "name": "Híbrido 0980",
+    "description": "Veículos com motor híbrido - categoria de teste 0980"
+  },
+  {
+    "name": "Carro 0981",
+    "description": "Veículos de passeio - categoria de teste 0981"
+  },
+  {
+    "name": "Moto 0982",
+    "description": "Motocicletas e scooters - categoria de teste 0982"
+  },
+  {
+    "name": "Caminhonete 0983",
+    "description": "Veículos utilitários leves - categoria de teste 0983"
+  },
+  {
+    "name": "Van 0984",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0984"
+  },
+  {
+    "name": "Caminhão 0985",
+    "description": "Veículos de carga - categoria de teste 0985"
+  },
+  {
+    "name": "Ônibus 0986",
+    "description": "Veículos para transporte coletivo - categoria de teste 0986"
+  },
+  {
+    "name": "SUV 0987",
+    "description": "Veículos esportivos utilitários - categoria de teste 0987"
+  },
+  {
+    "name": "Picape 0988",
+    "description": "Veículos com caçamba - categoria de teste 0988"
+  },
+  {
+    "name": "Elétrico 0989",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0989"
+  },
+  {
+    "name": "Híbrido 0990",
+    "description": "Veículos com motor híbrido - categoria de teste 0990"
+  },
+  {
+    "name": "Carro 0991",
+    "description": "Veículos de passeio - categoria de teste 0991"
+  },
+  {
+    "name": "Moto 0992",
+    "description": "Motocicletas e scooters - categoria de teste 0992"
+  },
+  {
+    "name": "Caminhonete 0993",
+    "description": "Veículos utilitários leves - categoria de teste 0993"
+  },
+  {
+    "name": "Van 0994",
+    "description": "Veículos para transporte de passageiros - categoria de teste 0994"
+  },
+  {
+    "name": "Caminhão 0995",
+    "description": "Veículos de carga - categoria de teste 0995"
+  },
+  {
+    "name": "Ônibus 0996",
+    "description": "Veículos para transporte coletivo - categoria de teste 0996"
+  },
+  {
+    "name": "SUV 0997",
+    "description": "Veículos esportivos utilitários - categoria de teste 0997"
+  },
+  {
+    "name": "Picape 0998",
+    "description": "Veículos com caçamba - categoria de teste 0998"
+  },
+  {
+    "name": "Elétrico 0999",
+    "description": "Veículos movidos a energia elétrica - categoria de teste 0999"
+  },
+  {
+    "name": "Híbrido 1000",
+    "description": "Veículos com motor híbrido - categoria de teste 1000"
+  }
+]
