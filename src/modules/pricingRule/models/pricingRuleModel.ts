@@ -1,6 +1,7 @@
 import { create } from "node:domain"
 import { prisma } from "../../../config/prisma"
 import { CreatePricingRuleDTO } from "../dtos/createPricingRuleDto"
+import { TipoCobranca } from "@prisma/client"
 
 export const PricingRuleModel = {
     async findByid(id: string){
@@ -61,7 +62,18 @@ export const PricingRuleModel = {
             }
         })
     },
-
+async update(id: string, data:Partial<{
+  categoryId: string;
+  tipo_cobranca: TipoCobranca;
+  valor: number;
+  tolerancia_minutos?: number
+}>
+){
+    return prisma.pricingRule.update({
+        where: {id},
+        data
+    })
+},
     async delete(id:string){
         return prisma.pricingRule.delete({
 

@@ -17,7 +17,7 @@ export function validatePricingRuleMiddleware(
 ){
     const {categoryId, tipo_cobranca, valor, tolerancia_minutos } = req.body
 
-    if(!categoryId || !tipo_cobranca || !valor || tolerancia_minutos){
+    if(!categoryId || !tipo_cobranca || valor === undefined ){
         throw new AppError(
             "Categoria tipo de cobrança e valor são obrigatórios ",
             400
@@ -70,7 +70,7 @@ export function validatePricingRuleMiddleware(
     if(tolerancia_minutos !== undefined && tolerancia_minutos !== null){
         toleranciaMinutosNumber = Number(tolerancia_minutos)
 
-        if(Number.isNaN(tolerancia_minutos)){
+        if(Number.isNaN(toleranciaMinutosNumber)){
             throw new AppError(
                 "Tolerância em minutos deve ser um número", 400
             )
