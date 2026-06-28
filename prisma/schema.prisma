@@ -22,6 +22,50 @@ enum TipoCobranca {
   MENSAL
 }
 
+enum ParkingSpotStatus {
+  DISPONIVEL
+  OCUPADA
+  MANUTENCAO
+}
+
+enum ParkingSessionStatus {
+  ABERTO
+  FECHADO
+  CANCELADO
+}
+
+model ParkingSpot {
+  id     String            @id @default(uuid())
+  numero String            @unique
+  patio  String?
+  status ParkingSpotStatus @default(DISPONIVEL)
+
+  parkingSessions ParkingSession[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ParkingSession {
+  id String @id @default(uuid())
+
+  vehicleId String
+  vehicle   Vehicle @relation(fields: [vehicleId], references: [id])
+
+  parkingSpotId String
+  parkingSpot   ParkingSpot @relation(fields: [parkingSpotId], references: [id])
+
+  entrada DateTime  @default(now())
+  saida   DateTime?
+
+  tempo_total_minutos Int?
+  valor_total         Decimal?
+
+  status ParkingSessionStatus @default(ABERTO)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
 model User {
   id        String   @id @default(uuid())
   name      String
@@ -80,7 +124,9 @@ model Vehicle {
   client     Client          @relation(fields: [clientId], references: [id])
   categoryId String
   category   VehicleCategory @relation(fields: [categoryId], references: [id])
+  parkingSessions ParkingSession[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
