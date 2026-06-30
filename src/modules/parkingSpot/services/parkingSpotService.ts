@@ -67,6 +67,7 @@ export const parkingSpotService = {
      },
 
      async delete(id: string){
+
         const parkingSpot = await ParkingSpotModel.findById(id)
 
         if(!parkingSpot){

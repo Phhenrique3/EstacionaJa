@@ -1,7 +1,6 @@
-import { permission } from "node:process"
 import { prisma } from "../../../config/prisma"
 import { CreateParkingSpotDto } from "../dtos/createParkingSpotDto"
-
+import { UpdateParkingSpotDTO } from "../dtos/updateParkingSpotDto";
 
 export const ParkingSpotModel = {
     async findById(id: string){
@@ -34,14 +33,15 @@ export const ParkingSpotModel = {
         })
     },
 
-    async update(id:string, data: Partial<CreateParkingSpotDto>){
-        return prisma.parkingSpot.update({
-            where:{
-                id,
-            },
-            data,
-        })
-    },
+    
+  async update(id: string, data: UpdateParkingSpotDTO) {
+    return prisma.parkingSpot.update({
+      where: {
+        id,
+      },
+      data,
+    });
+  },
 
     async delete(id: string){
         return prisma.parkingSpot.delete({

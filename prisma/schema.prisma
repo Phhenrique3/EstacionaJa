@@ -34,6 +34,76 @@ enum ParkingSessionStatus {
   CANCELADO
 }
 
+model User {
+  id        String   @id @default(uuid())
+  name      String
+  email     String   @unique
+  password  String
+  role      UserRole @default(OPERATOR)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Client {
+  id             String        @id @default(uuid())
+  name           String
+  email          String?
+  telefone       String
+  tipo_documento TipoDocumento
+  documento      String        @unique
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  vehicles Vehicle[]
+}
+
+model VehicleCategory {
+  id          String  @id @default(uuid())
+  name        String  @unique
+  description String?
+  active      Boolean @default(true)
+
+  vehicles     Vehicle[]
+  pricingRules PricingRule[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model PricingRule {
+  id String @id @default(uuid())
+
+  categoryId String
+  category   VehicleCategory @relation(fields: [categoryId], references: [id])
+
+  tipo_cobranca      TipoCobranca
+  valor              Decimal
+  tolerancia_minutos Int          @default(0)
+  active             Boolean      @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Vehicle {
+  id     String  @id @default(uuid())
+  placa  String  @unique
+  marca  String?
+  modelo String?
+  cor    String?
+
+  clientId String
+  client   Client @relation(fields: [clientId], references: [id])
+
+  categoryId String
+  category   VehicleCategory @relation(fields: [categoryId], references: [id])
+
+  parkingSessions ParkingSession[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
 model ParkingSpot {
   id     String            @id @default(uuid())
   numero String            @unique
@@ -66,67 +136,3 @@ model ParkingSession {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
-model User {
-  id        String   @id @default(uuid())
-  name      String
-  email     String   @unique
-  password  String
-  role      UserRole @default(OPERATOR)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-}
-
-model Client {
-  id             String        @id @default(uuid())
-  name           String
-  email          String?
-  telefone       String
-  tipo_documento TipoDocumento
-  documento      String        @unique
-  createdAt      DateTime      @default(now())
-  updatedAt      DateTime      @updatedAt
-  vehicles       Vehicle[]
-}
-
-model VehicleCategory {
-  id           String        @id @default(uuid())
-  name         String        @unique
-  description  String?
-  active       Boolean       @default(true)
-  vehicles     Vehicle[]
-  pricingRules PricingRule[]
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-}
-
-model PricingRule {
-  id                 String          @id @default(uuid())
-  categoryId         String
-  category           VehicleCategory @relation(fields: [categoryId], references: [id])
-
-  tipo_cobranca      TipoCobranca
-  valor              Decimal
-  tolerancia_minutos Int             @default(0)
-  active             Boolean         @default(true)
-
-  createdAt          DateTime        @default(now())
-  updatedAt          DateTime        @updatedAt
-}
-model Vehicle {
-  id     String  @id @default(uuid())
-  placa  String  @unique
-  marca  String?
-  modelo String?
-  cor    String?
-
-  clientId   String
-  client     Client          @relation(fields: [clientId], references: [id])
-  categoryId String
-  category   VehicleCategory @relation(fields: [categoryId], references: [id])
-  parkingSessions ParkingSession[]
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-}
-
