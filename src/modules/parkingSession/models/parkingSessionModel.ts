@@ -2,7 +2,7 @@ import { ParkingSessionStatus } from "@prisma/client"
 import { prisma } from "../../../config/prisma"
 import { CreateParkingSessionDTO } from "../dtos/createParkingSessionDto"
 
-export const ParkinSessionModel = {
+export const ParkingSessionModel = {
     async findById(id: string){
         return prisma.parkingSession.findUnique({
             where: {
@@ -97,7 +97,7 @@ export const ParkinSessionModel = {
         })
     },
 
-    async cencel(id: string){
+    async cancel(id: string){
         return prisma.parkingSession.update({
             where:{
                 id,

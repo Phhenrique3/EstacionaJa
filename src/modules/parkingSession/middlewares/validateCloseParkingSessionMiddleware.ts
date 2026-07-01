@@ -1,42 +1,48 @@
 import { NextFunction, Request, Response } from "express";
 import AppError from "../../../middlewares/AppError";
 
-function isValidTipoCobranca(TipoCobranca: string): boolean {
-    return(
-        TipoCobranca === "HORA" || 
-        TipoCobranca === "DIARIA"||
-        TipoCobranca === "MENSAL"
-    )
+function isValidTipoCobranca(tipoCobranca: string): boolean {
+  return (
+    tipoCobranca === "HORA" ||
+    tipoCobranca === "DIARIA" ||
+    tipoCobranca === "MENSAL"
+  );
 }
 
 export function validateCloseParkingSessionMiddleware(
-    req: Request,
-    res: Response,
-    next: NextFunction
-){
-    const { tipo_cobranca } = req.body
+  req: Request,
+  res: Response,
+  next: NextFunction
+) {
+  const body = req.body ?? {};
 
-    if(tipo_cobranca === undefined || tipo_cobranca === null || tipo_cobranca === ""){
-        req.body = {
-            tipo_cobranca: "HORA"
-        }
+  const tipo_cobranca = body.tipo_cobranca;
 
-        return next ()
-    }
+  if (
+    tipo_cobranca === undefined ||
+    tipo_cobranca === null ||
+    tipo_cobranca === ""
+  ) {
+    req.body = {
+      tipo_cobranca: "HORA",
+    };
 
-    if(typeof tipo_cobranca !== "string"){
-        throw new AppError("Tipo de cobrança deve ser um texto",400)
-    }
+    return next();
+  }
 
-    const tipoCobrançaNormaLizd = tipo_cobranca.trim().toUpperCase()
+  if (typeof tipo_cobranca !== "string") {
+    throw new AppError("Tipo de cobrança deve ser um texto", 400);
+  }
 
-    if(!isValidTipoCobranca(tipoCobrançaNormaLizd)){
-        throw new AppError("Tipo de cobrança deve ser HORA, DIARIA OU MENSAL",400)
-    }
+  const tipoCobrancaNormalized = tipo_cobranca.trim().toUpperCase();
 
-    req.body={
-        tipo_cobranca: tipoCobrançaNormaLizd
-    }
-    
-    return next()
+  if (!isValidTipoCobranca(tipoCobrancaNormalized)) {
+    throw new AppError("Tipo de cobrança deve ser HORA, DIARIA ou MENSAL", 400);
+  }
+
+  req.body = {
+    tipo_cobranca: tipoCobrancaNormalized,
+  };
+
+  return next();
 }

@@ -5,6 +5,7 @@ import { vehicleCategoryRoutes } from "../modules/vehicleCategory/routes/vehicle
 import { vehicleRoutes } from "../modules/vehicle/routes/vehicleRoutes";
 import { pricingRuleRoutes } from "../modules/pricingRule/routes/pricingRuleRoutes";
 import { parkingSpotRoutes } from "../modules/parkingSpot/routes/parkingSpotRoutes";
+import { parkingSessionRouter } from "../modules/parkingSession/routes/parkingSessionRoutes";
 
 const routes = Router();
 
@@ -21,4 +22,5 @@ routes.use("/vehicle-categories", vehicleCategoryRoutes);
 routes.use("/vehicles", vehicleRoutes );
 routes.use("/pricing-rules",pricingRuleRoutes)
 routes.use("/parking-spots", parkingSpotRoutes)
+routes.use("/parking-sessions",parkingSessionRouter )
 export { routes };  

@@ -33,7 +33,12 @@ enum ParkingSessionStatus {
   FECHADO
   CANCELADO
 }
-
+enum PaymentMethod {
+  DINHEIRO 
+  PIX
+  CARTAO_DEBITO
+  CARTAO_CREDITO
+}
 model User {
   id        String   @id @default(uuid())
   name      String
@@ -132,6 +137,22 @@ model ParkingSession {
   valor_total         Decimal?
 
   status ParkingSessionStatus @default(ABERTO)
+
+  payment Payment?
+
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+model Payment {
+  id String @id @default(uuid())
+
+  parkingSessionId String         @unique
+  parkingSession   ParkingSession @relation(fields: [parkingSessionId], references: [id])
+
+  metodo_pagamento PaymentMethod
+  valor_pago       Decimal
+  pago_em          DateTime      @default(now())
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
