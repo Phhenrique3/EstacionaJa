@@ -2,7 +2,6 @@ import { TipoCobranca } from "@prisma/client";
 import AppError from "../../../middlewares/AppError";
 import { ParkingSpotModel } from "../../parkingSpot/models/parkingSpotModel";
 import { PricingRuleModel } from "../../pricingRule/models/pricingRuleModel";
-import { CloseParkingSessionDTO } from "../dtos/closeParkingSessionDto";
 import { CreateParkingSessionDTO } from "../dtos/createParkingSessionDto";
 import { ParkingSessionModel } from "../models/parkingSessionModel";
 import { vehicleModel } from "../../vehicle/models/vehicleModel";
@@ -76,9 +75,22 @@ export const parkingSessionService = {
       throw new AppError("Essa vaga já possui um estacionamento aberto", 409);
     }
 
+    const pricingRule = await PricingRuleModel.findActiveByCategoryAndTipo(
+      vehicle.categoryId,
+      dto.tipo_cobranca
+    );
+
+    if (!pricingRule) {
+      throw new AppError(
+        "Regra de cobrança não encontrada para essa categoria e tipo",
+        404
+      );
+    }
+
     const parkingSession = await ParkingSessionModel.create({
       vehicleId: dto.vehicleId,
       parkingSpotId: dto.parkingSpotId,
+      tipo_cobranca: dto.tipo_cobranca,
     });
 
     await ParkingSpotModel.update(dto.parkingSpotId, {
@@ -104,7 +116,7 @@ export const parkingSessionService = {
     return parkingSession;
   },
 
-  async close(id: string, dto: CloseParkingSessionDTO) {
+  async close(id: string) {
     const parkingSession = await ParkingSessionModel.findById(id);
 
     if (!parkingSession) {
@@ -115,7 +127,7 @@ export const parkingSessionService = {
       throw new AppError("Estacionamento não está aberto", 400);
     }
 
-    const tipoCobranca = dto.tipo_cobranca ?? "HORA";
+    const tipoCobranca = parkingSession.tipo_cobranca;
 
     const pricingRule = await PricingRuleModel.findActiveByCategoryAndTipo(
       parkingSession.vehicle.categoryId,

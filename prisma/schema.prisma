@@ -136,10 +136,10 @@ model ParkingSession {
   tempo_total_minutos Int?
   valor_total         Decimal?
 
-  status ParkingSessionStatus @default(ABERTO)
+  tipo_cobranca TipoCobranca          @default(HORA)
+  status         ParkingSessionStatus @default(ABERTO)
 
   payment Payment?
-
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt

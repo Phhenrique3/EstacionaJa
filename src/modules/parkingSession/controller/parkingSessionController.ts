@@ -45,8 +45,7 @@ class ParkingSessionController {
         throw new AppError("ID do estacionamento e obrigatório", 400);
       }
 
-      const parkingSession = await parkingSessionService.close(id, req.body);
-
+      const parkingSession = await parkingSessionService.close(id);
       return res.status(201).json(parkingSession);
     } catch (error) {
       return next(error);
