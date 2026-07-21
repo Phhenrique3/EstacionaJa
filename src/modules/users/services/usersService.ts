@@ -5,7 +5,6 @@ import { UserRole } from "@prisma/client";
 import { AuthResponseDTO, LoginDto, RegisterDto } from "../dtos/auth/authDtos";
 import { UserModel } from "../models/userModel";
 import AppError from "../../../middlewares/AppError";
-import { AuthResponse } from "@supabase/supabase-js";
 
 const JWT_SECRET = process.env.JWT_SECRET || "dev-secret";
 
@@ -31,8 +30,7 @@ export const usersService = {
       name: dto.name.trim(),
       email,
       password,
-        role: dto.role ?? UserRole.ADMIN,
-
+      role: dto.role ?? UserRole.ADMIN,
     });
 
     return {
@@ -43,20 +41,29 @@ export const usersService = {
     };
   },
 
-
   async login(dto: LoginDto): Promise<AuthResponseDTO> {
-    
     const email = dto.email.trim().toLowerCase();
+
     const user = await UserModel.findByEmail(email);
-    if(!user) throw new AppError("Cradenciais invalida",401)
 
-      const ok = await bcrypt.compare(dto.password, user.password)
-      if(!ok) throw new AppError("Cradenciais invalida",401)
+    if (!user) {
+      throw new AppError("Credenciais inválidas", 401);
+    }
 
-        const token = sign({sub:user.id},JWT_SECRET,JWT_OPTIONS)
-        
-        return { token}
+    const ok = await bcrypt.compare(dto.password, user.password);
 
-  }
+    if (!ok) {
+      throw new AppError("Credenciais inválidas", 401);
+    }
+
+    const token = sign({ sub: user.id }, JWT_SECRET, JWT_OPTIONS);
+
+    return { token };
+  },
+
+  async findAll() {
+    const listUsers = await UserModel.getAll();
+
+    return listUsers;
+  },
 };
-

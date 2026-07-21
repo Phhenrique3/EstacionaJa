@@ -7,6 +7,7 @@ import { pricingRuleRoutes } from "../modules/pricingRule/routes/pricingRuleRout
 import { parkingSpotRoutes } from "../modules/parkingSpot/routes/parkingSpotRoutes";
 import { parkingSessionRouter } from "../modules/parkingSession/routes/parkingSessionRoutes";
 import { paymentRoutes } from "../modules/Payment/routes/paymentRoutes";
+import { authRoutes } from "../modules/PasswordResetToken/routes/PasswordResetTokenRoute";
 
 const routes = Router();
 
@@ -16,7 +17,7 @@ routes.get("/health", (request, response) => {
     message: "Api funcionando",
   });
 });
-
+routes.use("/auth", authRoutes);
 routes.use("/users", usersRoutes);
 routes.use("/clients", clientRoutes );
 routes.use("/vehicle-categories", vehicleCategoryRoutes);

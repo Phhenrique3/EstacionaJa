@@ -1,4 +1,3 @@
-
 import { NextFunction, Request, Response } from "express";
 import { LoginDto } from "../dtos/auth/authDtos";
 import { usersService } from "../services/usersService";
@@ -42,6 +41,15 @@ class UsersController {
         message: "Login realizado com sucesso",
         ...result,
       });
+    } catch (error) {
+      return next(error);
+    }
+  }
+
+  async findAll(req: Request, res: Response, next: NextFunction) {
+    try {
+      const user = await usersService.findAll();
+      return res.status(201).json(user);
     } catch (error) {
       return next(error);
     }

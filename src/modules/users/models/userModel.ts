@@ -64,4 +64,16 @@ export const UserModel = {
       where: { id },
     });
   },
+
+  async updatePassword(id: string, password: string){
+    return prisma.user.update({
+      where:{
+        id,
+      },
+      data:{
+        password,
+      }
+    })
+  }
+
 };
