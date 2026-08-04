@@ -41,7 +41,13 @@ export const passwordResertService = {
 
           <p>Seu código de verificação é:</p>
 
-          <h1 style="letter-spacing: 4px;">${token}</h1>
+          <h1 style="
+          letter-spacing: 5px;
+          background: #fef2f2;
+          color: #e53935;
+          font-size: 36px;
+          font-weight: bold;
+         ">${token}</h1>
 
           <p>Esse código expira em 15 minutos.</p>
 
@@ -57,31 +63,31 @@ export const passwordResertService = {
   },
 
   async resetPassword(dto: ResetPasswordDto) {
-  const email = dto.email.trim().toLowerCase();
+    const email = dto.email.trim().toLowerCase();
 
-  const user = await UserModel.findByEmail(email);
+    const user = await UserModel.findByEmail(email);
 
-  if (!user) {
-    throw new AppError("Código inválido ou expirado", 400);
-  }
+    if (!user) {
+      throw new AppError("Código inválido ou expirado", 400);
+    }
 
-  const passwordResetToken = await PasswordResetTokenModel.findValidToken(
-    email,
-    dto.token
-  );
+    const passwordResetToken = await PasswordResetTokenModel.findValidToken(
+      email,
+      dto.token,
+    );
 
-  if (!passwordResetToken) {
-    throw new AppError("Código inválido ou expirado", 400);
-  }
+    if (!passwordResetToken) {
+      throw new AppError("Código inválido ou expirado", 400);
+    }
 
-  const hashedPassword = await bcrypt.hash(dto.newPassword, 10);
+    const hashedPassword = await bcrypt.hash(dto.newPassword, 10);
 
-  await UserModel.updatePassword(user.id, hashedPassword);
+    await UserModel.updatePassword(user.id, hashedPassword);
 
-  await PasswordResetTokenModel.markAsUsed(passwordResetToken.id);
+    await PasswordResetTokenModel.markAsUsed(passwordResetToken.id);
 
-  return {
-    message: "Senha redefinida com sucesso",
-  };
-}
+    return {
+      message: "Senha redefinida com sucesso",
+    };
+  },
 };

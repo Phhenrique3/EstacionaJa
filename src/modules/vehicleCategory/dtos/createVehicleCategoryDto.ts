@@ -1,4 +1,4 @@
-export interface CreateVehicleCategoryDto{
-    name: string;
-    description? : string
+export interface CreateVehicleCategoryDto {
+  name: string;
+  description?: string;
 }
