@@ -28,7 +28,7 @@ pricingRuleRoutes.get("/:id", (req: Request, res: Response, next: NextFunction) 
   return pricingRuleController.findById(req, res, next);
 });
 
-pricingRuleRoutes.put(
+pricingRuleRoutes.patch(
   "/:id",
   validatePricingRuleMiddleware,
   (req: Request, res: Response, next: NextFunction) => {
