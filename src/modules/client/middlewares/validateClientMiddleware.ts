@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import  AppError  from "../../../middlewares/AppError";
+import AppError from "../../../middlewares/AppError";
 
 function isValidEmail(email: string): boolean {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -12,11 +12,11 @@ function isValidName(name: string): boolean {
 }
 
 function isValidTipoDocumento(tipo_documento: string): boolean {
-    return tipo_documento === "CPF" || tipo_documento === "CNPJ"
+  return tipo_documento === "CPF" || tipo_documento === "CNPJ";
 }
 
-function normalizeOnlyNumbers(value: string) : string {
-    return value.replace(/\D/g, "")
+function normalizeOnlyNumbers(value: string): string {
+  return value.replace(/\D/g, "");
 }
 
 export function validateRegisterClientMiddleware(
@@ -24,10 +24,13 @@ export function validateRegisterClientMiddleware(
   res: Response,
   next: NextFunction
 ) {
-  const { name, email, documento, tipo_documento, telefone  } = req.body;
+  const { name, email, documento, tipo_documento, telefone } = req.body;
 
   if (!name || !email || !documento || !tipo_documento || !telefone) {
-    throw new AppError("Nome, email, documento, tipo de documento é telefone  são obrigatórios", 400);
+    throw new AppError(
+      "Nome, email, documento, tipo de documento e telefone são obrigatórios",
+      400
+    );
   }
 
   if (typeof name !== "string") {
@@ -54,16 +57,17 @@ export function validateRegisterClientMiddleware(
     throw new AppError("Email inválido", 400);
   }
 
-  if (typeof telefone !== "string"){
-    throw new AppError("telefone deve ser uma string",400)
+  if (typeof telefone !== "string") {
+    throw new AppError("Telefone deve ser um texto", 400);
   }
 
-  const telefoneNormalized = normalizeOnlyNumbers(telefone)
+  const telefoneNormalized = normalizeOnlyNumbers(telefone);
 
-  if(telefoneNormalized.length <10 || telefoneNormalized.length >11){
+  if (telefoneNormalized.length < 10 || telefoneNormalized.length > 11) {
     throw new AppError("Telefone deve ter 10 ou 11 dígitos", 400);
   }
-   if (typeof tipo_documento !== "string") {
+
+  if (typeof tipo_documento !== "string") {
     throw new AppError("Tipo de documento deve ser um texto", 400);
   }
 
@@ -92,8 +96,9 @@ export function validateRegisterClientMiddleware(
   ) {
     throw new AppError("CNPJ deve ter 14 dígitos", 400);
   }
+
   req.body = {
-   name: nameTrimmed,
+    name: nameTrimmed,
     email: emailTrimmed,
     telefone: telefoneNormalized,
     tipo_documento: tipoDocumentoNormalized,

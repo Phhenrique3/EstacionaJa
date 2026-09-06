@@ -1,62 +1,51 @@
-import { SrvRecord } from "node:dns"
-import { prisma } from "../../../config/prisma"
-import { CreateClientDTO } from "../dtos/createClientDto"
+import { prisma } from "../../../database/prisma";
+import { CreateClientDTO } from "../dtos/createClientDto";
 
 export const ClientModel = {
-    async findBy(id: string){
-        return prisma.client.findUnique({
-            where:{
-                id,
-            }
-        })
-    },
+  async findById(id: string) {
+    return prisma.client.findUnique({
+      where: {
+        id,
+      },
+    });
+  },
 
-    async findByDocumento(documento: string){
-        return prisma.client.findUnique({
-            where: {
-                documento,
-            }
-        })
+  async findByDocumento(documento: string) {
+    return prisma.client.findUnique({
+      where: {
+        documento,
+      },
+    });
+  },
 
-    },
+  async findAll() {
+    return prisma.client.findMany({
+      orderBy: {
+        createdAt: "desc",
+      },
+    });
+  },
 
-    async findById(id: string){
-        return prisma.client.findUnique({
-            where:{
-                id,
-            }
-        })
-    },
+  async create(data: CreateClientDTO) {
+    return prisma.client.create({
+      data,
+    });
+  },
 
-    async findAll(){
-        return prisma.client.findMany({
-            orderBy:{
-                createdAt: "desc",
-            }
-        })
-    },
+  async update(id: string, data: Partial<CreateClientDTO>) {
+    return prisma.client.update({
+      where: {
+        id,
+      },
+      data,
+    });
+  },
 
-     async create(data: CreateClientDTO ){
-        return prisma.client.create({
-            data,
-        })
-    },
-
-    async update(id: string, data: Partial<CreateClientDTO>){
-        return prisma.client.update({
-            where:{
-                id,
-            },
-            data,
-        })
-    },
-
-    async delete (id: string){
-        return prisma.client.delete({
-            where:{
-                id,
-            }
-        })
-    }
-}
-
+  async delete(id: string) {
+    return prisma.client.delete({
+      where: {
+        id,
+      },
+    });
+  },
+};

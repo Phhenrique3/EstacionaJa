@@ -1,8 +1,7 @@
-import { NextFunction, Request, Response } from "express"; 
+import { NextFunction, Request, Response } from "express";
 import { clientService } from "../service/clientService";
 import AppClient from "../../../middlewares/AppError";
-
-
+import AppError from "../../../middlewares/AppError";
 
 class ClientController {
   async create(req: Request, res: Response, next: NextFunction) {
@@ -15,31 +14,41 @@ class ClientController {
     }
   }
 
-
-async findAll(req: Request, res: Response, next: NextFunction) {
-      try{
-       const clients = await clientService.findAll()
-        return res.status(200).json(clients)
-    }catch(error){
-      return next(error)
+  async findAll(req: Request, res: Response, next: NextFunction) {
+    try {
+      const clients = await clientService.findAll();
+      return res.status(200).json(clients);
+    } catch (error) {
+      return next(error);
     }
   }
 
+  async delete(req: Request, res: Response, next: NextFunction) {
+    try {
+      const id = req.params.id;
 
-  async delete(req:Request, res: Response, next:NextFunction){
-    try{
-
-      const  id  = req.params.id
-
-    
-    if (!id || typeof id !== "string") {
-      throw new AppClient("ID do cliente é obrigatório", 400);
-    }
+      if (!id || typeof id !== "string") {
+        throw new AppClient("ID do cliente é obrigatório", 400);
+      }
 
       const results = await clientService.delete(id);
-      return res.status(200).json(results)
-    }catch(error){
-      return next(error) 
+      return res.status(200).json(results);
+    } catch (error) {
+      return next(error);
+    }
+  }
+
+  async update(req: Request, res: Response, next: NextFunction) {
+    try {
+      const id = req.params.id;
+      if (!id || typeof id !== "string") {
+        throw new AppError("Id do cliente é obrigatório", 400);
+      }
+
+      const client = await clientService.update(id, req.body);
+      return res.status(200).json(client);
+    } catch (error) {
+      return next(error);
     }
   }
 }

@@ -8,6 +8,7 @@ import { parkingSpotRoutes } from "../modules/parkingSpot/routes/parkingSpotRout
 import { parkingSessionRouter } from "../modules/parkingSession/routes/parkingSessionRoutes";
 import { paymentRoutes } from "../modules/Payment/routes/paymentRoutes";
 import { authRoutes } from "../modules/PasswordResetToken/routes/PasswordResetTokenRoute";
+import { reportsRoutes } from "../modules/reports/routes/reportsRoutes";
 
 const routes = Router();
 
@@ -19,11 +20,12 @@ routes.get("/health", (request, response) => {
 });
 routes.use("/auth", authRoutes);
 routes.use("/users", usersRoutes);
-routes.use("/clients", clientRoutes );
+routes.use("/clients", clientRoutes);
 routes.use("/vehicle-categories", vehicleCategoryRoutes);
-routes.use("/vehicles", vehicleRoutes );
-routes.use("/pricing-rules",pricingRuleRoutes)
-routes.use("/parking-spots", parkingSpotRoutes)
-routes.use("/parking-sessions",parkingSessionRouter )
-routes.use("/payments", paymentRoutes)
-export { routes };  
+routes.use("/vehicles", vehicleRoutes);
+routes.use("/pricing-rules", pricingRuleRoutes);
+routes.use("/parking-spots", parkingSpotRoutes);
+routes.use("/parking-sessions", parkingSessionRouter);
+routes.use("/payments", paymentRoutes);
+routes.use("/reports", reportsRoutes);
+export { routes };
