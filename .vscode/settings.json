@@ -1,4 +1,3 @@
 {
-    "DockerRun.DisableDockerrc": true,
-    "liveServer.settings.port": 5501
+    "DockerRun.DisableDockerrc": true
 }
