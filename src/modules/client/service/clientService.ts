@@ -1,11 +1,12 @@
 import { CreateClientDTO } from "../dtos/createClientDto";
+import { updateClientDto } from "../dtos/updateClientDto";
 import { ClientModel } from "../models/clientModel";
 import AppError from "../../../middlewares/AppError";
 
 export const clientService = {
   async create(dto: CreateClientDTO) {
     const clientAlreadyExists = await ClientModel.findByDocumento(
-      dto.documento
+      dto.documento,
     );
 
     if (clientAlreadyExists) {
@@ -39,14 +40,14 @@ export const clientService = {
     return client;
   },
 
-  async update(id: string, dto: Partial<CreateClientDTO>) {
+  async update(id: string, dto: Partial<updateClientDto>) {
     const client = await ClientModel.findById(id);
 
     if (!client) {
       throw new AppError("Cliente não encontrado", 404);
     }
 
-    const data: Partial<CreateClientDTO> = {};
+    const data: Partial<updateClientDto> = {};
 
     if (dto.name !== undefined) {
       data.name = dto.name.trim();
@@ -67,15 +68,18 @@ export const clientService = {
     if (dto.documento !== undefined) {
       const documento = dto.documento.trim();
 
-      const documentAlreadyExists = await ClientModel.findByDocumento(
-        documento
-      );
+      const documentAlreadyExists =
+        await ClientModel.findByDocumento(documento);
 
       if (documentAlreadyExists && documentAlreadyExists.id !== id) {
         throw new AppError("Já existe outro cliente com esse documento", 409);
       }
 
       data.documento = documento;
+    }
+
+    if (dto.active !== undefined) {
+      data.active = dto.active;
     }
 
     const updatedClient = await ClientModel.update(id, data);
@@ -90,10 +94,21 @@ export const clientService = {
       throw new AppError("Cliente não encontrado", 404);
     }
 
+    if (client.active === false) {
+      throw new AppError("Cliente ja está desativado", 400);
+    }
+    const vehiclesCount = await ClientModel.countVehiclesByClientId(id);
+    if (vehiclesCount > 0) {
+      throw new AppError(
+        "Não é possével realizar processo de inativa este cliente, pois ele possoui veículo cadastro ",
+        409,
+      );
+    }
+
     await ClientModel.delete(id);
 
     return {
-      message: "Cliente removido com sucesso",
+      message: "Cliente desejativo com sucesso",
     };
   },
 };

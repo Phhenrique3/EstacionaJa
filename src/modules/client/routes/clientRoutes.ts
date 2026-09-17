@@ -1,6 +1,7 @@
 import { ClientController } from "../controller/clientController";
 import { validateRegisterClientMiddleware } from "../middlewares/validateClientMiddleware";
 import { NextFunction, Request, Response, Router } from "express";
+import { validateUpdateClientMiddleware } from "../middlewares/validateUpdateClientMiddleware";
 
 const clientRoutes = Router();
 
@@ -27,7 +28,7 @@ clientRoutes.delete(
 
 clientRoutes.patch(
   "/:id",
-  validateRegisterClientMiddleware,
+  validateUpdateClientMiddleware,
   (req: Request, res: Response, next: NextFunction) => {
     return clientController.update(req, res, next);
   },

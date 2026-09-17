@@ -33,12 +33,14 @@ enum ParkingSessionStatus {
   FECHADO
   CANCELADO
 }
+
 enum PaymentMethod {
-  DINHEIRO 
+  DINHEIRO
   PIX
   CARTAO_DEBITO
   CARTAO_CREDITO
 }
+
 model User {
   id        String   @id @default(uuid())
   name      String
@@ -55,9 +57,11 @@ model Client {
   email          String?
   telefone       String
   tipo_documento TipoDocumento
-  documento      String        @unique
-  createdAt      DateTime      @default(now())
-  updatedAt      DateTime      @updatedAt
+  active         Boolean       @default(true)
+
+  documento String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   vehicles Vehicle[]
 }
@@ -136,14 +140,15 @@ model ParkingSession {
   tempo_total_minutos Int?
   valor_total         Decimal?
 
-  tipo_cobranca TipoCobranca          @default(HORA)
-  status         ParkingSessionStatus @default(ABERTO)
+  tipo_cobranca TipoCobranca         @default(HORA)
+  status        ParkingSessionStatus @default(ABERTO)
 
   payment Payment?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
 model Payment {
   id String @id @default(uuid())
 
@@ -157,6 +162,7 @@ model Payment {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
 model PasswordResetToken {
   id        String    @id @default(uuid())
   email     String

@@ -1,5 +1,6 @@
 import { prisma } from "../../../database/prisma";
 import { CreateClientDTO } from "../dtos/createClientDto";
+import { updateClientDto } from "../dtos/updateClientDto";
 
 export const ClientModel = {
   async findById(id: string) {
@@ -32,7 +33,7 @@ export const ClientModel = {
     });
   },
 
-  async update(id: string, data: Partial<CreateClientDTO>) {
+  async update(id: string, data: Partial<updateClientDto>) {
     return prisma.client.update({
       where: {
         id,
@@ -42,9 +43,20 @@ export const ClientModel = {
   },
 
   async delete(id: string) {
-    return prisma.client.delete({
+    return prisma.client.update({
       where: {
         id,
+      },
+      data: {
+        active: false,
+      },
+    });
+  },
+
+  async countVehiclesByClientId(clientId: string) {
+    return prisma.vehicle.count({
+      where: {
+        clientId,
       },
     });
   },

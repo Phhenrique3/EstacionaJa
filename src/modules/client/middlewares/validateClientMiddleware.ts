@@ -3,11 +3,13 @@ import AppError from "../../../middlewares/AppError";
 
 function isValidEmail(email: string): boolean {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
   return emailRegex.test(email);
 }
 
 function isValidName(name: string): boolean {
   const nameRegex = /^[a-zA-ZÀ-ÿ\s]+$/;
+
   return nameRegex.test(name);
 }
 
@@ -22,17 +24,18 @@ function normalizeOnlyNumbers(value: string): string {
 export function validateRegisterClientMiddleware(
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) {
   const { name, email, documento, tipo_documento, telefone } = req.body;
 
   if (!name || !email || !documento || !tipo_documento || !telefone) {
     throw new AppError(
       "Nome, email, documento, tipo de documento e telefone são obrigatórios",
-      400
+      400,
     );
   }
 
+  // Nome
   if (typeof name !== "string") {
     throw new AppError("Nome deve ser um texto", 400);
   }
@@ -47,6 +50,7 @@ export function validateRegisterClientMiddleware(
     throw new AppError("Nome deve conter apenas letras e espaços", 400);
   }
 
+  // Email
   if (typeof email !== "string") {
     throw new AppError("Email deve ser um texto", 400);
   }
@@ -57,6 +61,7 @@ export function validateRegisterClientMiddleware(
     throw new AppError("Email inválido", 400);
   }
 
+  // Telefone
   if (typeof telefone !== "string") {
     throw new AppError("Telefone deve ser um texto", 400);
   }
@@ -67,6 +72,7 @@ export function validateRegisterClientMiddleware(
     throw new AppError("Telefone deve ter 10 ou 11 dígitos", 400);
   }
 
+  // Tipo documento
   if (typeof tipo_documento !== "string") {
     throw new AppError("Tipo de documento deve ser um texto", 400);
   }
@@ -77,23 +83,18 @@ export function validateRegisterClientMiddleware(
     throw new AppError("Tipo de documento deve ser CPF ou CNPJ", 400);
   }
 
+  // Documento
   if (typeof documento !== "string") {
     throw new AppError("Documento deve ser um texto", 400);
   }
 
   const documentoNormalized = normalizeOnlyNumbers(documento);
 
-  if (
-    tipoDocumentoNormalized === "CPF" &&
-    documentoNormalized.length !== 11
-  ) {
+  if (tipoDocumentoNormalized === "CPF" && documentoNormalized.length !== 11) {
     throw new AppError("CPF deve ter 11 dígitos", 400);
   }
 
-  if (
-    tipoDocumentoNormalized === "CNPJ" &&
-    documentoNormalized.length !== 14
-  ) {
+  if (tipoDocumentoNormalized === "CNPJ" && documentoNormalized.length !== 14) {
     throw new AppError("CNPJ deve ter 14 dígitos", 400);
   }
 
