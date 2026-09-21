@@ -38,7 +38,7 @@ function formatDocument(tipoDocumento: string, documento: string) {
   if (tipoDocumento === "CNPJ" && numbers.length === 14) {
     return numbers.replace(
       /(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/,
-      "$1.$2.$3/$4-$5"
+      "$1.$2.$3/$4-$5",
     );
   }
 
@@ -103,23 +103,21 @@ function drawTableHeader(doc: PDFKit.PDFDocument, y: number) {
   const margin = 40;
 
   const columns = [
-    { title: "#", x: margin, width: 30 },
-    { title: "Nome", x: margin + 30, width: 150 },
-    { title: "E-mail", x: margin + 180, width: 180 },
-    { title: "Telefone", x: margin + 360, width: 90 },
-    { title: "Tipo", x: margin + 450, width: 60 },
-    { title: "Documento", x: margin + 510, width: 120 },
-    { title: "Cadastro", x: margin + 630, width: 90 },
+    { title: "#", x: margin, width: 25 },
+    { title: "Nome", x: margin + 25, width: 130 },
+    { title: "E-mail", x: margin + 155, width: 170 },
+    { title: "Telefone", x: margin + 325, width: 85 },
+    { title: "Tipo", x: margin + 410, width: 50 },
+    { title: "Documento", x: margin + 460, width: 120 },
+    { title: "Cadastro", x: margin + 580, width: 90 },
+    { title: "Status", x: margin + 670, width: 90 },
   ];
 
   const headerHeight = 24;
 
   doc.save();
 
-  doc
-    .rect(margin, y, 720, headerHeight)
-    .fillColor("#eeeeee")
-    .fill();
+  doc.rect(margin, y, 760, headerHeight).fillColor("#eeeeee").fill();
 
   doc.restore();
 
@@ -131,10 +129,7 @@ function drawTableHeader(doc: PDFKit.PDFDocument, y: number) {
     });
   });
 
-  doc
-    .rect(margin, y, 720, headerHeight)
-    .strokeColor("#cccccc")
-    .stroke();
+  doc.rect(margin, y, 760, headerHeight).strokeColor("#cccccc").stroke();
 
   return {
     columns,
@@ -146,7 +141,7 @@ function drawClientRow(
   doc: PDFKit.PDFDocument,
   y: number,
   columns: { title: string; x: number; width: number }[],
-  values: string[]
+  values: string[],
 ) {
   const padding = 5;
 
@@ -247,6 +242,7 @@ export const reportsService = {
         client.tipo_documento,
         formatDocument(client.tipo_documento, client.documento),
         formatDate(client.createdAt),
+        client.active ? "Ativo" : "Inativo",
       ];
 
       doc.font("Helvetica").fontSize(8);
@@ -256,8 +252,8 @@ export const reportsService = {
         ...values.map((value, valueIndex) =>
           doc.heightOfString(value, {
             width: tableInfo.columns[valueIndex].width - 10,
-          })
-        )
+          }),
+        ),
       );
 
       if (currentY + estimatedRowHeight > doc.page.height - 65) {
