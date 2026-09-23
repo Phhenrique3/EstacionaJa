@@ -1,18 +1,27 @@
 import { NextFunction, Request, Response } from "express";
 import jwt from "jsonwebtoken";
 
-const JWT_SECRET = process.env.JWT_SECRET || "dev-secret";
+function getJwtSecret(): string {
+  const secret = process.env.JWT_SECRET;
 
+  if (!secret) {
+    throw new Error("JWT_SECRET não configurado");
+  }
+
+  return secret;
+}
+
+const JWT_SECRET = getJwtSecret();
 export interface AuthRequest extends Request {
   UserId?: string;
 }
 
-export default function requireAuth( 
+export default function requireAuth(
   req: AuthRequest,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) {
-  const authHeader = req.cookies?.authorization;
+  const authHeader = req.headers.authorization;
 
   if (!authHeader) {
     return res.status(401).json({ message: "token ausente" });
@@ -25,9 +34,11 @@ export default function requireAuth(
   }
 
   try {
-    const payload = jwt.verify(token, JWT_SECRET) as { sub?: string };
+    const payload = jwt.verify(token, JWT_SECRET) as {
+      sub?: string;
+    };
 
-    if (!payload.sub) {
+    if (typeof payload.sub !== "string") {
       return res.status(401).json({ message: "token inválido" });
     }
 

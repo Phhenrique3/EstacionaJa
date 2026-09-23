@@ -28,7 +28,7 @@ parkingSpotRoutes.get("/:id",
     }
 )
 
-parkingSpotRoutes.put("/:id",
+parkingSpotRoutes.patch("/:id",
     validateParkingSpotMiddleware,
     (req:Request, res:Response, next:NextFunction)=>{
         return parkingSpotController.update(req,res,next)

@@ -1,4 +1,5 @@
 import { Router } from "express";
+import requireAuth from "../modules/users/middlewares/authMiddleware";
 import { usersRoutes } from "../modules/users/routes/usersRoutes";
 import { clientRoutes } from "../modules/client/routes/clientRoutes";
 import { vehicleCategoryRoutes } from "../modules/vehicleCategory/routes/vehicleCategoryRoutes";
@@ -20,7 +21,7 @@ routes.get("/health", (request, response) => {
 });
 routes.use("/auth", authRoutes);
 routes.use("/users", usersRoutes);
-routes.use("/clients", clientRoutes);
+routes.use("/clients", requireAuth,  clientRoutes);
 routes.use("/vehicle-categories", vehicleCategoryRoutes);
 routes.use("/vehicles", vehicleRoutes);
 routes.use("/pricing-rules", pricingRuleRoutes);
