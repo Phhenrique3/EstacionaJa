@@ -1,11 +1,13 @@
 import { NextFunction, Request, Response } from "express";
 import AppError from "../../../middlewares/AppError";
+import { TipoCobranca } from "@prisma/client";
 
 function isValidTipoCobranca(tipoCobranca: string): boolean {
   return (
     tipoCobranca === "HORA" ||
     tipoCobranca === "DIARIA" ||
-    tipoCobranca === "MENSAL"
+    tipoCobranca === "MENSAL" || 
+    tipoCobranca === "MINUTO"
   );
 }
 

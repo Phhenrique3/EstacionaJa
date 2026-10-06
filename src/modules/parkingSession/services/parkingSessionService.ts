@@ -16,7 +16,7 @@ function calculateAmount(
   totalMinutes: number,
   value: number,
   toleranceMinutes: number,
-  tipoCobranca: TipoCobranca
+  tipoCobranca: TipoCobranca,
 ): number {
   if (totalMinutes <= toleranceMinutes) {
     return 0;
@@ -37,6 +37,12 @@ function calculateAmount(
     const minutesPerMonth = 30 * 24 * 60;
     const totalMonths = Math.ceil(totalMinutes / minutesPerMonth);
     return totalMonths * value;
+  }
+
+  const chargedMinutes = totalMinutes - toleranceMinutes;
+
+  if (tipoCobranca === "MINUTO") {
+    return chargedMinutes * value;
   }
 
   throw new AppError("Tipo de cobrança inválido", 400);
@@ -61,15 +67,19 @@ export const parkingSessionService = {
     }
 
     const openSessionByVehicle = await ParkingSessionModel.findOpenByVehicleId(
-      dto.vehicleId
+      dto.vehicleId,
     );
 
     if (openSessionByVehicle) {
-      throw new AppError("Esse veículo já possui um estacionamento aberto", 409);
+      throw new AppError(
+        "Esse veículo já possui um estacionamento aberto",
+        409,
+      );
     }
 
-    const openSessionBySpot =
-      await ParkingSessionModel.findOpenByParkingSpotId(dto.parkingSpotId);
+    const openSessionBySpot = await ParkingSessionModel.findOpenByParkingSpotId(
+      dto.parkingSpotId,
+    );
 
     if (openSessionBySpot) {
       throw new AppError("Essa vaga já possui um estacionamento aberto", 409);
@@ -77,13 +87,13 @@ export const parkingSessionService = {
 
     const pricingRule = await PricingRuleModel.findActiveByCategoryAndTipo(
       vehicle.categoryId,
-      dto.tipo_cobranca
+      dto.tipo_cobranca,
     );
 
     if (!pricingRule) {
       throw new AppError(
         "Regra de cobrança não encontrada para essa categoria e tipo",
-        404
+        404,
       );
     }
 
@@ -131,13 +141,13 @@ export const parkingSessionService = {
 
     const pricingRule = await PricingRuleModel.findActiveByCategoryAndTipo(
       parkingSession.vehicle.categoryId,
-      tipoCobranca
+      tipoCobranca,
     );
 
     if (!pricingRule) {
       throw new AppError(
         "Regra de cobrança não encontrada para essa categoria e tipo",
-        404
+        404,
       );
     }
 
@@ -145,14 +155,14 @@ export const parkingSessionService = {
 
     const tempoTotalMinutos = calculateMinutesBetween(
       parkingSession.entrada,
-      saida
+      saida,
     );
 
     const valorTotal = calculateAmount(
       tempoTotalMinutos,
       Number(pricingRule.valor),
       pricingRule.tolerancia_minutos,
-      tipoCobranca
+      tipoCobranca,
     );
 
     const closedParkingSession = await ParkingSessionModel.close(id, {
@@ -177,7 +187,10 @@ export const parkingSessionService = {
     }
 
     if (parkingSession.status !== "ABERTO") {
-      throw new AppError("Somente estacionamento aberto pode ser cancelado", 400);
+      throw new AppError(
+        "Somente estacionamento aberto pode ser cancelado",
+        400,
+      );
     }
 
     const canceledParkingSession = await ParkingSessionModel.cancel(id);

@@ -5,21 +5,22 @@ function isValidTipoCobranca(tipoCobranca: string): boolean {
   return (
     tipoCobranca === "HORA" ||
     tipoCobranca === "DIARIA" ||
-    tipoCobranca === "MENSAL"
+    tipoCobranca === "MENSAL" ||
+    tipoCobranca === "MINUTO"
   );
 }
 
 export function validateParkingSessionMiddleware(
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) {
   const { vehicleId, parkingSpotId, tipo_cobranca } = req.body;
 
   if (!vehicleId || !parkingSpotId || !tipo_cobranca) {
     throw new AppError(
       "Veículo, vaga e tipo de cobrança são obrigatórios",
-      400
+      400,
     );
   }
 
@@ -38,7 +39,7 @@ export function validateParkingSessionMiddleware(
   const tipoCobrancaNormalized = tipo_cobranca.trim().toUpperCase();
 
   if (!isValidTipoCobranca(tipoCobrancaNormalized)) {
-    throw new AppError("Tipo de cobrança deve ser HORA, DIARIA ou MENSAL", 400);
+    throw new AppError("Tipo de cobrança deve ser HORA, DIARIA, MENSAL OU MINUTO", 400);
   }
 
   req.body = {

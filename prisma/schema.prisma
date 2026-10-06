@@ -20,6 +20,7 @@ enum TipoCobranca {
   HORA
   DIARIA
   MENSAL
+  MINUTO
 }
 
 enum ParkingSpotStatus {
