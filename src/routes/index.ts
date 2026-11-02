@@ -9,7 +9,9 @@ import { parkingSpotRoutes } from "../modules/parkingSpot/routes/parkingSpotRout
 import { parkingSessionRouter } from "../modules/parkingSession/routes/parkingSessionRoutes";
 import { paymentRoutes } from "../modules/Payment/routes/paymentRoutes";
 import { authRoutes } from "../modules/PasswordResetToken/routes/PasswordResetTokenRoute";
-import { reportsRoutes } from "../modules/reports/routes/reportsRoutes";
+import { reportsRoutes } from "../modules/reports/client/routes/reportsRoutes";
+import { reportsParkingSessionRoutes } from "../modules/reports/parking/routes/reportsParkingSessionRoutes";
+import { resportsVehicle } from "../modules/reports/vehicle/routes/reportsVehicleRoutes";
 
 const routes = Router();
 
@@ -29,4 +31,7 @@ routes.use("/parking-spots", requireAuth, parkingSpotRoutes);
 routes.use("/parking-sessions", requireAuth, parkingSessionRouter);
 routes.use("/payments", requireAuth, paymentRoutes);
 routes.use("/reports", requireAuth, reportsRoutes);
+routes.use("/reports/ParkingSessions",requireAuth, reportsParkingSessionRoutes,);
+routes.use("/reports/Vehicle", resportsVehicle);
+
 export { routes };

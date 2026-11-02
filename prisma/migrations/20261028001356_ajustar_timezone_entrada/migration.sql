@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "ParkingSession" ALTER COLUMN "entrada" DROP NOT NULL,
+ALTER COLUMN "entrada" DROP DEFAULT,
+ALTER COLUMN "whatsappNotificadoEm" SET DATA TYPE TIMESTAMPTZ(3);

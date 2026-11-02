@@ -1,6 +1,7 @@
 import PDFDocument = require("pdfkit");
-import { ClientModel } from "../../client/models/clientModel";
+import { ParkingSessionModel } from "../../../parkingSession/models/parkingSessionModel";
 
+/** Converte uma data para o formato brasileiro usado no relatório. */
 function formatDate(dateValue: Date | string) {
   const date = new Date(dateValue);
 
@@ -10,41 +11,19 @@ function formatDate(dateValue: Date | string) {
   }).format(date);
 }
 
-function onlyNumbers(value: string) {
-  return value.replace(/\D/g, "");
+/** Formata um valor monetário no padrão brasileiro. */
+function formatCurrency(value: unknown) {
+  if (value === null || value === undefined) {
+    return "Não informado";
+  }
+
+  return new Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  }).format(Number(value));
 }
 
-function formatPhone(phone: string) {
-  const numbers = onlyNumbers(phone);
-
-  if (numbers.length === 11) {
-    return numbers.replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
-  }
-
-  if (numbers.length === 10) {
-    return numbers.replace(/(\d{2})(\d{4})(\d{4})/, "($1) $2-$3");
-  }
-
-  return phone;
-}
-
-function formatDocument(tipoDocumento: string, documento: string) {
-  const numbers = onlyNumbers(documento);
-
-  if (tipoDocumento === "CPF" && numbers.length === 11) {
-    return numbers.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
-  }
-
-  if (tipoDocumento === "CNPJ" && numbers.length === 14) {
-    return numbers.replace(
-      /(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/,
-      "$1.$2.$3/$4-$5",
-    );
-  }
-
-  return documento;
-}
-
+/** Desenha a identificação do relatório, a data de geração e a linha separadora. */
 function drawHeader(doc: PDFKit.PDFDocument) {
   const margin = 40;
   const pageWidth = doc.page.width;
@@ -59,7 +38,7 @@ function drawHeader(doc: PDFKit.PDFDocument) {
     .font("Helvetica")
     .fontSize(10)
     .fillColor("#555555")
-    .text("Relatório de Clientes Cadastrados", margin, 55);
+    .text("Relatório de Sessões de Estacionamento", margin, 55);
 
   doc
     .fontSize(9)
@@ -78,6 +57,7 @@ function drawHeader(doc: PDFKit.PDFDocument) {
   doc.y = 105;
 }
 
+/** Desenha a linha inferior e o número da página no rodapé. */
 function drawFooter(doc: PDFKit.PDFDocument, pageNumber: number) {
   const margin = 40;
   const pageWidth = doc.page.width;
@@ -99,18 +79,33 @@ function drawFooter(doc: PDFKit.PDFDocument, pageNumber: number) {
     });
 }
 
+/** Desenha os títulos e as dimensões das colunas da tabela de sessões. */
 function drawTableHeader(doc: PDFKit.PDFDocument, y: number) {
   const margin = 40;
 
   const columns = [
+    // Índice sequencial da sessão no relatório.
     { title: "#", x: margin, width: 25 },
-    { title: "Nome", x: margin + 25, width: 130 },
-    { title: "E-mail", x: margin + 155, width: 170 },
-    { title: "Telefone", x: margin + 325, width: 85 },
-    { title: "Tipo", x: margin + 410, width: 50 },
-    { title: "Documento", x: margin + 460, width: 120 },
-    { title: "Cadastro", x: margin + 580, width: 90 },
-    { title: "Status", x: margin + 670, width: 90 },
+    // Placa do veículo estacionado.
+    { title: "Placa", x: margin + 25, width: 75 },
+    // Cliente vinculado ao veículo.
+    { title: "Cliente", x: margin + 100, width: 105 },
+    // Categoria do veículo usada na cobrança.
+    { title: "Categoria", x: margin + 205, width: 85 },
+    // Número da vaga ocupada pela sessão.
+    { title: "Vaga", x: margin + 290, width: 55 },
+    // Data e hora de entrada no estacionamento.
+    { title: "Entrada", x: margin + 345, width: 85 },
+    // Data e hora de saída; fica "Em aberto" enquanto a sessão estiver ativa.
+    { title: "Saída", x: margin + 430, width: 85 },
+    // Tempo total estacionado, em minutos.
+    { title: "Tempo", x: margin + 515, width: 60 },
+    // Forma de cobrança aplicada à sessão.
+    { title: "Cobrança", x: margin + 575, width: 75 },
+    // Valor final calculado para a sessão.
+    { title: "Valor", x: margin + 650, width: 70 },
+    // Situação da sessão: ABERTO, FECHADO ou CANCELADO.
+    { title: "Status", x: margin + 720, width: 40 },
   ];
 
   const headerHeight = 24;
@@ -137,7 +132,8 @@ function drawTableHeader(doc: PDFKit.PDFDocument, y: number) {
   };
 }
 
-function drawClientRow(
+/** Desenha uma linha da tabela e calcula sua altura para textos longos. */
+function drawParkingSessionRow(
   doc: PDFKit.PDFDocument,
   y: number,
   columns: { title: string; x: number; width: number }[],
@@ -173,14 +169,16 @@ function drawClientRow(
 }
 
 export const reportsService = {
-  async listClients() {
-    const clients = await ClientModel.findAll();
+  /** Busca e retorna todas as sessões de estacionamento. */
+  async listParkingSessions() {
+    const parkingSessions = await ParkingSessionModel.findAll();
 
-    return clients;
+    return parkingSessions;
   },
 
-  async generateClientsPdf() {
-    const clients = await ClientModel.findAll();
+  /** Gera o PDF paisagem com resumo, sessões e paginação. */
+  async generateParkingSessionsPdf() {
+    const parkingSessions = await ParkingSessionModel.findAll();
 
     const doc = new PDFDocument({
       size: "A4",
@@ -218,12 +216,12 @@ export const reportsService = {
       .font("Helvetica")
       .fontSize(10)
       .fillColor("#333333")
-      .text(`Total de clientes cadastrados: ${clients.length}`);
+      .text(`Total de sessões: ${parkingSessions.length}`);
 
     doc.moveDown();
 
-    if (clients.length === 0) {
-      doc.fontSize(11).text("Nenhum cliente cadastrado.");
+    if (parkingSessions.length === 0) {
+      doc.fontSize(11).text("Nenhuma sessão de estacionamento encontrada.");
       drawFooter(doc, pageNumber);
       doc.end();
 
@@ -233,16 +231,21 @@ export const reportsService = {
     let tableInfo = drawTableHeader(doc, doc.y + 8);
     let currentY = tableInfo.nextY;
 
-    clients.forEach((client, index) => {
+    parkingSessions.forEach((session, index) => {
       const values = [
         String(index + 1),
-        client.name,
-        client.email ?? "Não informado",
-        formatPhone(client.telefone),
-        client.tipo_documento,
-        formatDocument(client.tipo_documento, client.documento),
-        formatDate(client.createdAt),
-        client.active ? "Ativo" : "Inativo",
+        session.vehicle.placa,
+        session.vehicle.client.name,
+        session.vehicle.category.name,
+        session.parkingSpot.numero,
+        formatDate(session.entrada),
+        session.saida ? formatDate(session.saida) : "Em aberto",
+        session.tempo_total_minutos !== null
+          ? `${session.tempo_total_minutos} min`
+          : "Em aberto",
+        session.tipo_cobranca,
+        formatCurrency(session.valor_total),
+        session.status,
       ];
 
       doc.font("Helvetica").fontSize(8);
@@ -268,7 +271,7 @@ export const reportsService = {
         currentY = tableInfo.nextY;
       }
 
-      currentY = drawClientRow(doc, currentY, tableInfo.columns, values);
+      currentY = drawParkingSessionRow(doc, currentY, tableInfo.columns, values);
     });
 
     drawFooter(doc, pageNumber);

@@ -135,14 +135,14 @@ model ParkingSession {
   parkingSpotId String
   parkingSpot   ParkingSpot @relation(fields: [parkingSpotId], references: [id])
 
-  entrada DateTime  @default(now())
-  saida   DateTime?
-
+  entrada             DateTime  @default(now()) 
+  saida               DateTime? @db.Timestamptz()
   tempo_total_minutos Int?
   valor_total         Decimal?
 
-  tipo_cobranca TipoCobranca         @default(HORA)
-  status        ParkingSessionStatus @default(ABERTO)
+  tipo_cobranca        TipoCobranca         @default(HORA)
+  status               ParkingSessionStatus @default(ABERTO)
+  whatsappNotificadoEm DateTime?           //  @db.Timestamptz(3)
 
   payment Payment?
 

@@ -24,6 +24,13 @@ export const vehicleModel = {
       orderBy: {
         createdAt: "desc",
       },
+      where: {
+        parkingSessions: {
+          none: {
+            status: "ABERTO",
+          },
+        },
+      },
       include: {
         client: true,
         category: true,

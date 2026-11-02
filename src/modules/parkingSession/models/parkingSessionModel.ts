@@ -1,6 +1,7 @@
 import { ParkingSessionStatus } from "@prisma/client";
 import { prisma } from "../../../config/prisma";
 import { CreateParkingSessionDTO } from "../dtos/createParkingSessionDto";
+import { create } from "node:domain";
 
 export const ParkingSessionModel = {
   async findById(id: string) {
@@ -54,20 +55,35 @@ export const ParkingSessionModel = {
       },
     });
   },
-  async create(data: CreateParkingSessionDTO) {
-    return prisma.parkingSession.create({
-      data,
-      include: {
-        vehicle: {
-          include: {
-            client: true,
-            category: true,
-          },
+
+async create(data: CreateParkingSessionDTO) {
+
+  const sessaoAberta = await prisma.parkingSession.findFirst({
+    where: {
+      vehicleId: data.vehicleId,
+      status: "ABERTO",
+    },
+  });
+
+  if (sessaoAberta) {
+    throw new Error(
+      "Este veículo já possui uma sessão de estacionamento aberta."
+    );
+  }
+
+  return prisma.parkingSession.create({
+    data,
+    include: {
+      vehicle: {
+        include: {
+          client: true,
+          category: true,
         },
-        parkingSpot: true,
       },
-    });
-  },
+      parkingSpot: true,
+    },
+  });
+},
 
   async close(
     id: string,

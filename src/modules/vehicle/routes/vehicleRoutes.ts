@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response, Router } from "express";
 import { VehicleController } from "../controller/vehicleController";
-import { validateUpdateVehicleMiddleware } from "../middlewares/ValidateupdateVehicleMiddleware";
+import { validateUpdateVehicleMiddleware } from "../middlewares/ValidateUpdateVehicleMiddleware";
 const vehicleRoutes = Router();
 
 export const vehicleController = new VehicleController();

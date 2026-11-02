@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "ParkingSession" ALTER COLUMN "entrada" SET DATA TYPE TIMESTAMP(3),
+ALTER COLUMN "whatsappNotificadoEm" SET DATA TYPE TIMESTAMP(3);
