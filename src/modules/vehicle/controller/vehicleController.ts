@@ -1,3 +1,4 @@
+import { catalogPage, parsePage } from "../../../pagination/catalogPages";
 import { NextFunction, Request, Response } from "express";
 import { vehicleService } from "../services/vehicleService";
 import AppError from "../../../middlewares/AppError";
@@ -13,6 +14,9 @@ class VehicleController {
   }
   async findAll(req: Request, res: Response, next: NextFunction) {
     try {
+      if (req.query.page !== undefined) {
+        return res.json(await catalogPage("vehicle", parsePage(req.query)));
+      }
       const vehicle = await vehicleService.findAll();
       return res.status(200).json(vehicle);
     } catch (error) {

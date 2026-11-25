@@ -110,6 +110,9 @@ export const parkingSessionService = {
     return parkingSession;
   },
 
+  periodTotals: ParkingSessionModel.periodTotals,
+  findPage: ParkingSessionModel.findPage,
+
   async findAll() {
     const parkingSessions = await ParkingSessionModel.findAll();
 

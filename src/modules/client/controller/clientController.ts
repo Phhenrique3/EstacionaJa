@@ -1,3 +1,4 @@
+import { catalogPage, parsePage } from "../../../pagination/catalogPages";
 import { NextFunction, Request, Response } from "express";
 import { clientService } from "../service/clientService";
 import AppClient from "../../../middlewares/AppError";
@@ -16,6 +17,9 @@ class ClientController {
 
   async findAll(req: Request, res: Response, next: NextFunction) {
     try {
+      if (req.query.page !== undefined) {
+        return res.json(await catalogPage("client", parsePage(req.query)));
+      }
       const clients = await clientService.findAll();
       return res.status(200).json(clients);
     } catch (error) {

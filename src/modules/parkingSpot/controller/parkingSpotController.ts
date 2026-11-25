@@ -1,3 +1,4 @@
+import { catalogPage, parsePage } from "../../../pagination/catalogPages";
 import { NextFunction, Request,Response} from "express";
 import { parkingSpotService } from "../services/parkingSpotService";
 import AppError from "../../../middlewares/AppError";
@@ -16,6 +17,9 @@ class ParkingSpotController {
 
     async findAll(req:Request, res: Response, next: NextFunction){
         try{
+            if (req.query.page !== undefined) {
+              return res.json(await catalogPage("parkingSpot", parsePage(req.query)));
+            }
             const parking = await parkingSpotService.findAll()
         return res.status(201).json(parking)
         }catch(error){

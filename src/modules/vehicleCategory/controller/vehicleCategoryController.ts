@@ -1,3 +1,4 @@
+import { catalogPage, parsePage } from "../../../pagination/catalogPages";
 import { NextFunction, Request, Response } from "express";
 import { vehicleCategoryService } from "../services/vehicleCategoryService";
 import AppError from "../../../middlewares/AppError";
@@ -15,6 +16,9 @@ class VehicleCategoryController {
 
   async findAll(req: Request, res: Response, next: NextFunction) {
     try {
+      if (req.query.page !== undefined) {
+        return res.json(await catalogPage("vehicleCategory", parsePage(req.query)));
+      }
       const contegories = await vehicleCategoryService.findAll();
 
       return res.status(201).json(contegories);

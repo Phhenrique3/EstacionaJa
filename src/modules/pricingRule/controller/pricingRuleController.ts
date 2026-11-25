@@ -1,3 +1,4 @@
+import { catalogPage, parsePage } from "../../../pagination/catalogPages";
 import { NextFunction, Request, Response } from "express";
 import { pricingRuleService } from "../services/pricingRuleService";
 import AppError from "../../../middlewares/AppError";
@@ -14,6 +15,9 @@ class PricingRuleController {
 
     async findAll(req:Request, res: Response, next:NextFunction){
         try{
+            if (req.query.page !== undefined) {
+              return res.json(await catalogPage("pricingRule", parsePage(req.query)));
+            }
             const pricingRule = await pricingRuleService.findAll()
             return res.status(200).json(pricingRule)
         }catch(error){

@@ -1,4 +1,4 @@
-import { ParkingSessionStatus } from "@prisma/client";
+import { Prisma, ParkingSessionStatus } from "@prisma/client";
 import { prisma } from "../../../config/prisma";
 import { CreateParkingSessionDTO } from "../dtos/createParkingSessionDto";
 import { create } from "node:domain";
@@ -33,6 +33,73 @@ export const ParkingSessionModel = {
         parkingSpot: true,
       },
     });
+  },
+
+  async periodTotals(start: Date, end: Date) {
+    const range = { gte: start, lt: end };
+    return prisma.$transaction(async tx => {
+      const counts = await tx.parkingSession.groupBy({ by: ["status"], where: { entrada: range }, _count: true });
+      const revenue = await tx.parkingSession.aggregate({
+        where: { saida: range, status: "FECHADO" }, _sum: { valor_total: true },
+      });
+      const totals = { entries: 0, ABERTO: 0, FECHADO: 0, CANCELADO: 0, revenue: Number(revenue._sum.valor_total ?? 0) };
+      for (const row of counts) {
+        totals.entries += row._count;
+        totals[row.status] = row._count;
+      }
+      return totals;
+    }, { isolationLevel: "RepeatableRead" });
+  },
+
+  async findPage(requestedPage: number, search: string) {
+    const pageSize = 10;
+    const contains = search.replace(/[\\%_]/g, "\\$&");
+    const text = { contains, mode: "insensitive" as const };
+    const where: Prisma.ParkingSessionWhereInput = search
+      ? {
+          OR: [
+            { vehicle: { placa: text } },
+            { vehicle: { client: { name: text } } },
+            { parkingSpot: { numero: text } },
+            { parkingSpot: { patio: text } },
+            {
+              status: {
+                in: Object.values(ParkingSessionStatus).filter((status) =>
+                  status.includes(search.toUpperCase()),
+                ),
+              },
+            },
+          ],
+        }
+      : {};
+
+    return prisma.$transaction(
+      async (tx) => {
+        const counts = await tx.parkingSession.groupBy({
+          by: ["status"],
+          _count: true,
+        });
+        const summary = { ABERTO: 0, FECHADO: 0, CANCELADO: 0 };
+        for (const row of counts) summary[row.status] = row._count;
+        const total = search
+          ? await tx.parkingSession.count({ where })
+          : summary.ABERTO + summary.FECHADO + summary.CANCELADO;
+        const totalPages = Math.ceil(total / pageSize);
+        const page = Math.min(requestedPage, Math.max(1, totalPages));
+        const items = await tx.parkingSession.findMany({
+          where,
+          skip: (page - 1) * pageSize,
+          take: pageSize,
+          orderBy: [{ createdAt: "desc" }, { id: "desc" }],
+          include: {
+            vehicle: { include: { client: true, category: true } },
+            parkingSpot: true,
+          },
+        });
+        return { items, page, totalPages, total, summary };
+      },
+      { isolationLevel: "RepeatableRead" },
+    );
   },
 
   async findAll() {

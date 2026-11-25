@@ -16,6 +16,22 @@ class ParkingSessionController {
 
   async findAll(req: Request, res: Response, next: NextFunction) {
     try {
+      if (req.query.start !== undefined || req.query.end !== undefined) {
+        const { start, end } = req.query;
+        if (typeof start !== "string" || typeof end !== "string" ||
+            !(new Date(start).getTime() < new Date(end).getTime())) {
+          throw new AppError("Período inválido.", 400);
+        }
+        return res.json(await parkingSessionService.periodTotals(new Date(start), new Date(end)));
+      }
+      if (req.query.page !== undefined) {
+        const { page, search = "" } = req.query;
+        if (typeof page !== "string" || !/^[1-9]\d*$/.test(page) ||
+            !Number.isSafeInteger(Number(page)) || typeof search !== "string") {
+          throw new AppError("Página ou busca inválida.", 400);
+        }
+        return res.json(await parkingSessionService.findPage(Number(page), search.trim()));
+      }
       const parkingSession = await parkingSessionService.findAll();
       return res.status(201).json(parkingSession);
     } catch (error) {
