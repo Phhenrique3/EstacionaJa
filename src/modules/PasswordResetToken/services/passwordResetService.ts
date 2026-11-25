@@ -21,8 +21,7 @@ export const passwordResertService = {
     }
     const token = generateToken();
 
-    const expiresAt = new Date();
-    expiresAt.setMinutes(expiresAt.getMinutes() + 15);
+    const expiresAt = new Date(Date.now() + 15 * 60 * 1000);
 
     await PasswordResetTokenModel.create({
       email: dto.email,

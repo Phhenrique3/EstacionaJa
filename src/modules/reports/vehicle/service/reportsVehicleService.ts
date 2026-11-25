@@ -5,6 +5,7 @@ function formatDate(dateValue: Date | string): string {
   const date = new Date(dateValue);
 
   return new Intl.DateTimeFormat("pt-BR", {
+    timeZone: "America/Sao_Paulo",
     dateStyle: "short",
     timeStyle: "short",
   }).format(date);
